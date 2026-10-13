@@ -1,1 +1,265 @@
-{}
+{
+  "comparison": {
+    "capped_recall@10": {
+      "baseline": 0.9193333333333333,
+      "delta": 0.002666666666666667,
+      "delta_percentage_points": 0.2666666666666667,
+      "improved_queries": 2,
+      "near": 0.922,
+      "paired_bootstrap_95ci": [
+        -0.008,
+        0.014666666666666665
+      ],
+      "relative_change_percent": 0.29006526468455407,
+      "unchanged_queries": 296,
+      "worsened_queries": 2
+    },
+    "hit@10": {
+      "baseline": 0.9233333333333333,
+      "delta": 0.0033333333333333335,
+      "delta_percentage_points": 0.33333333333333337,
+      "improved_queries": 2,
+      "near": 0.9266666666666666,
+      "paired_bootstrap_95ci": [
+        -0.006666666666666667,
+        0.016666666666666666
+      ],
+      "relative_change_percent": 0.36101083032490977,
+      "unchanged_queries": 297,
+      "worsened_queries": 1
+    },
+    "mrr@10": {
+      "baseline": 0.8172949735449736,
+      "delta": 0.007857142857142856,
+      "delta_percentage_points": 0.7857142857142856,
+      "improved_queries": 16,
+      "near": 0.8251521164021165,
+      "paired_bootstrap_95ci": [
+        -0.003271362433862434,
+        0.01912175925925926
+      ],
+      "relative_change_percent": 0.9613594982803962,
+      "unchanged_queries": 267,
+      "worsened_queries": 17
+    },
+    "ndcg@10": {
+      "baseline": 0.8386123560626453,
+      "delta": 0.005266717709847356,
+      "delta_percentage_points": 0.5266717709847356,
+      "improved_queries": 16,
+      "near": 0.8438790737724926,
+      "paired_bootstrap_95ci": [
+        -0.0033383873772466553,
+        0.013917456261450663
+      ],
+      "relative_change_percent": 0.6280276783155251,
+      "unchanged_queries": 264,
+      "worsened_queries": 20
+    },
+    "ndcg@100": {
+      "baseline": 0.8543455453967064,
+      "delta": 0.003961642793910978,
+      "delta_percentage_points": 0.39616427939109783,
+      "improved_queries": 24,
+      "near": 0.858307188190617,
+      "paired_bootstrap_95ci": [
+        -0.004057036209222054,
+        0.012163643140177104
+      ],
+      "relative_change_percent": 0.46370497455703724,
+      "unchanged_queries": 246,
+      "worsened_queries": 30
+    },
+    "ndcg@5": {
+      "baseline": 0.8288285863231872,
+      "delta": 0.0009076227527755417,
+      "delta_percentage_points": 0.09076227527755418,
+      "improved_queries": 14,
+      "near": 0.8297362090759628,
+      "paired_bootstrap_95ci": [
+        -0.009108478964529354,
+        0.010910235096793099
+      ],
+      "relative_change_percent": 0.10950669025568938,
+      "unchanged_queries": 271,
+      "worsened_queries": 15
+    },
+    "recall@10": {
+      "baseline": 0.9193333333333333,
+      "delta": 0.002666666666666667,
+      "delta_percentage_points": 0.2666666666666667,
+      "improved_queries": 2,
+      "near": 0.922,
+      "paired_bootstrap_95ci": [
+        -0.008,
+        0.014666666666666665
+      ],
+      "relative_change_percent": 0.29006526468455407,
+      "unchanged_queries": 296,
+      "worsened_queries": 2
+    },
+    "recall@100": {
+      "baseline": 0.99,
+      "delta": -0.006666666666666667,
+      "delta_percentage_points": -0.6666666666666667,
+      "improved_queries": 0,
+      "near": 0.9833333333333333,
+      "paired_bootstrap_95ci": [
+        -0.016666666666666666,
+        0.0
+      ],
+      "relative_change_percent": -0.6734006734006734,
+      "unchanged_queries": 298,
+      "worsened_queries": 2
+    },
+    "recall@5": {
+      "baseline": 0.8927777777777779,
+      "delta": -0.011666666666666667,
+      "delta_percentage_points": -1.1666666666666667,
+      "improved_queries": 1,
+      "near": 0.8811111111111113,
+      "paired_bootstrap_95ci": [
+        -0.02666666666666667,
+        0.0016666666666666668
+      ],
+      "relative_change_percent": -1.3067828251400122,
+      "unchanged_queries": 294,
+      "worsened_queries": 5
+    }
+  },
+  "selected": {
+    "alpha": 0.25,
+    "depth": 1,
+    "normalized": true
+  },
+  "counts": {
+    "documents": 5183,
+    "development": 807,
+    "test": 300
+  },
+  "storage": {
+    "base_dimension": 768,
+    "baseline_keys_bytes": 15922176,
+    "near_dimension": 1536,
+    "near_keys_bytes": 31844352,
+    "reference_table_bytes": 98304
+  },
+  "latency": {
+    "baseline": {
+      "includes_encoder": false,
+      "median_ms": 0.39032899076119065,
+      "p95_ms": 0.4522425355389714,
+      "queries": 100
+    },
+    "near": {
+      "includes_encoder": false,
+      "median_ms": 1.024141995003447,
+      "p95_ms": 6.275075246230699,
+      "queries": 100
+    }
+  },
+  "development": {
+    "candidate_count": 30,
+    "config_sha256": "5886dfc5afb39e7d28c7b31e270d5a941ad31fc82456cd7cf6ca4ddb16f888f3",
+    "dev_baseline": {
+      "capped_recall@10": 1.0,
+      "hit@10": 1.0,
+      "mrr@10": 0.9824452705493597,
+      "ndcg@10": 0.9867057489608441,
+      "ndcg@100": 0.9867057489608441,
+      "ndcg@5": 0.9863611239806439,
+      "recall@10": 1.0,
+      "recall@100": 1.0,
+      "recall@5": 0.9993804213135068
+    },
+    "dev_ndcg@10": 0.9853511566231368,
+    "dev_qrels_sha256": "12e2f0d78dae5b8c5dbe47c42aec249caff8d5a8bafbc3422241ac084c5bb4f0",
+    "embedding_manifest_sha256": "77ff89640d145ba47c6398d3582f85ff30b215d226481949a8d895bf6c9da72d",
+    "selection": {
+      "alpha": 0.25,
+      "depth": 1,
+      "normalized": true
+    },
+    "selection_before_test_evaluation": true
+  },
+  "query": {
+    "query_id": "785",
+    "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+    "documents": [
+      {
+        "baseline_cosine": 0.7263127565383911,
+        "baseline_rank": 12,
+        "doc_projection_coefficient": 0.9193043112754822,
+        "document_id": "12471115",
+        "judged_relevant": true,
+        "near_rank": 9,
+        "near_score": 20.29559326171875,
+        "residual_cosine": 0.23479315638542175,
+        "scaled_original": 19.366050720214844,
+        "title": "The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies",
+        "weighted_residual_bonus": 0.9295425415039062
+      },
+      {
+        "baseline_cosine": 0.7359701991081238,
+        "baseline_rank": 7,
+        "doc_projection_coefficient": 0.9386464953422546,
+        "document_id": "39285547",
+        "judged_relevant": false,
+        "near_rank": 10,
+        "near_score": 20.25351905822754,
+        "residual_cosine": 0.1591232419013977,
+        "scaled_original": 19.623552322387695,
+        "title": "Microarray analysis of pneumococcal gene expression during invasive disease.",
+        "weighted_residual_bonus": 0.6299664974212646
+      },
+      {
+        "baseline_cosine": 0.7321431636810303,
+        "baseline_rank": 9,
+        "doc_projection_coefficient": 0.9140039086341858,
+        "document_id": "17676273",
+        "judged_relevant": false,
+        "near_rank": 12,
+        "near_score": 20.16581916809082,
+        "residual_cosine": 0.16274616122245789,
+        "scaled_original": 19.521509170532227,
+        "title": "affy--analysis of Affymetrix GeneChip data at the probe level.",
+        "weighted_residual_bonus": 0.6443095803260803
+      },
+      {
+        "baseline_cosine": 0.7265503406524658,
+        "baseline_rank": 11,
+        "doc_projection_coefficient": 0.9213171601295471,
+        "document_id": "46602807",
+        "judged_relevant": false,
+        "near_rank": 11,
+        "near_score": 20.172264099121094,
+        "residual_cosine": 0.2020413875579834,
+        "scaled_original": 19.372385025024414,
+        "title": "Comparison of agar dilution, microdilution, and disk elution methods for measuring the synergy of cefotaxime and its metabolite against anaerobes.",
+        "weighted_residual_bonus": 0.7998787760734558
+      },
+      {
+        "baseline_cosine": 0.7317042350769043,
+        "baseline_rank": 10,
+        "doc_projection_coefficient": 0.9096916913986206,
+        "document_id": "7396492",
+        "judged_relevant": false,
+        "near_rank": 8,
+        "near_score": 20.296794891357422,
+        "residual_cosine": 0.19878540933132172,
+        "scaled_original": 19.50980567932129,
+        "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)",
+        "weighted_residual_bonus": 0.7869884371757507
+      }
+    ],
+    "alpha": 0.25,
+    "depth": 1,
+    "normalized": true,
+    "tau_original": 0.037504433273346946,
+    "tau_normalized_residual": 0.06314750378060072,
+    "tied_max_recall10_gain_query_ids": [
+      "128",
+      "785"
+    ]
+  }
+}
