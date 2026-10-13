@@ -1,0 +1,17 @@
+{
+  "explicit_minus_concatenated_metric_deltas": {
+    "capped_recall@10": 0.0,
+    "hit@10": 0.0,
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "ndcg@100": 0.0,
+    "ndcg@5": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 0.0,
+    "recall@5": 0.0
+  },
+  "max_absolute_score_error": 2.86102294921875e-05,
+  "top100_rank_mismatched_queries": 10,
+  "top100_set_mismatched_queries": 0,
+  "top10_rank_mismatched_queries": 0
+}

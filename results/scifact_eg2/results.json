@@ -1,0 +1,290 @@
+{
+  "baseline": {
+    "capped_recall@10": 0.9193333333333333,
+    "hit@10": 0.9233333333333333,
+    "mrr@10": 0.8172949735449736,
+    "ndcg@10": 0.8386123560626453,
+    "ndcg@100": 0.8543455453967064,
+    "ndcg@5": 0.8288285863231872,
+    "recall@10": 0.9193333333333333,
+    "recall@100": 0.99,
+    "recall@5": 0.8927777777777779
+  },
+  "build_seconds": 7.139180193014909,
+  "comparison": {
+    "capped_recall@10": {
+      "baseline": 0.9193333333333333,
+      "delta": 0.002666666666666667,
+      "delta_percentage_points": 0.2666666666666667,
+      "improved_queries": 2,
+      "near": 0.922,
+      "paired_bootstrap_95ci": [
+        -0.008,
+        0.014666666666666665
+      ],
+      "relative_change_percent": 0.29006526468455407,
+      "unchanged_queries": 296,
+      "worsened_queries": 2
+    },
+    "hit@10": {
+      "baseline": 0.9233333333333333,
+      "delta": 0.0033333333333333335,
+      "delta_percentage_points": 0.33333333333333337,
+      "improved_queries": 2,
+      "near": 0.9266666666666666,
+      "paired_bootstrap_95ci": [
+        -0.006666666666666667,
+        0.016666666666666666
+      ],
+      "relative_change_percent": 0.36101083032490977,
+      "unchanged_queries": 297,
+      "worsened_queries": 1
+    },
+    "mrr@10": {
+      "baseline": 0.8172949735449736,
+      "delta": 0.007857142857142856,
+      "delta_percentage_points": 0.7857142857142856,
+      "improved_queries": 16,
+      "near": 0.8251521164021165,
+      "paired_bootstrap_95ci": [
+        -0.003271362433862434,
+        0.01912175925925926
+      ],
+      "relative_change_percent": 0.9613594982803962,
+      "unchanged_queries": 267,
+      "worsened_queries": 17
+    },
+    "ndcg@10": {
+      "baseline": 0.8386123560626453,
+      "delta": 0.005266717709847356,
+      "delta_percentage_points": 0.5266717709847356,
+      "improved_queries": 16,
+      "near": 0.8438790737724926,
+      "paired_bootstrap_95ci": [
+        -0.0033383873772466553,
+        0.013917456261450663
+      ],
+      "relative_change_percent": 0.6280276783155251,
+      "unchanged_queries": 264,
+      "worsened_queries": 20
+    },
+    "ndcg@100": {
+      "baseline": 0.8543455453967064,
+      "delta": 0.003961642793910978,
+      "delta_percentage_points": 0.39616427939109783,
+      "improved_queries": 24,
+      "near": 0.858307188190617,
+      "paired_bootstrap_95ci": [
+        -0.004057036209222054,
+        0.012163643140177104
+      ],
+      "relative_change_percent": 0.46370497455703724,
+      "unchanged_queries": 246,
+      "worsened_queries": 30
+    },
+    "ndcg@5": {
+      "baseline": 0.8288285863231872,
+      "delta": 0.0009076227527755417,
+      "delta_percentage_points": 0.09076227527755418,
+      "improved_queries": 14,
+      "near": 0.8297362090759628,
+      "paired_bootstrap_95ci": [
+        -0.009108478964529354,
+        0.010910235096793099
+      ],
+      "relative_change_percent": 0.10950669025568938,
+      "unchanged_queries": 271,
+      "worsened_queries": 15
+    },
+    "recall@10": {
+      "baseline": 0.9193333333333333,
+      "delta": 0.002666666666666667,
+      "delta_percentage_points": 0.2666666666666667,
+      "improved_queries": 2,
+      "near": 0.922,
+      "paired_bootstrap_95ci": [
+        -0.008,
+        0.014666666666666665
+      ],
+      "relative_change_percent": 0.29006526468455407,
+      "unchanged_queries": 296,
+      "worsened_queries": 2
+    },
+    "recall@100": {
+      "baseline": 0.99,
+      "delta": -0.006666666666666667,
+      "delta_percentage_points": -0.6666666666666667,
+      "improved_queries": 0,
+      "near": 0.9833333333333333,
+      "paired_bootstrap_95ci": [
+        -0.016666666666666666,
+        0.0
+      ],
+      "relative_change_percent": -0.6734006734006734,
+      "unchanged_queries": 298,
+      "worsened_queries": 2
+    },
+    "recall@5": {
+      "baseline": 0.8927777777777779,
+      "delta": -0.011666666666666667,
+      "delta_percentage_points": -1.1666666666666667,
+      "improved_queries": 1,
+      "near": 0.8811111111111113,
+      "paired_bootstrap_95ci": [
+        -0.02666666666666667,
+        0.0016666666666666668
+      ],
+      "relative_change_percent": -1.3067828251400122,
+      "unchanged_queries": 294,
+      "worsened_queries": 5
+    }
+  },
+  "dataset": "SciFact (BEIR / mteb/scifact)",
+  "dev_queries": 807,
+  "documents": 5183,
+  "fixed_settings": {
+    "anchors": 16,
+    "beta": 10.0,
+    "k": 50,
+    "kmeans_iterations": 100,
+    "kmeans_restarts": 3,
+    "max_depth": 3,
+    "routing": 4,
+    "seed": 42
+  },
+  "hnsw": null,
+  "latency": {
+    "baseline": {
+      "includes_encoder": false,
+      "median_ms": 0.39032899076119065,
+      "p95_ms": 0.4522425355389714,
+      "queries": 100
+    },
+    "near": {
+      "includes_encoder": false,
+      "median_ms": 1.024141995003447,
+      "p95_ms": 6.275075246230699,
+      "queries": 100
+    }
+  },
+  "limitations": [
+    "Single standard dataset, not the paper's eight-task LMEB reproduction.",
+    "Quantized LiteRT EmbeddingGemma2 text path; not the full-precision checkpoint.",
+    "Query holdout with a shared corpus, not candidate-bank holdout.",
+    "Bootstrap resamples queries with fixed selected hyperparameters; related claims may be dependent.",
+    "Exact search separates scoring quality from ANN approximation; HNSW results require --hnsw."
+  ],
+  "model": {
+    "completed": {
+      "corpus": {
+        "rows": 5183,
+        "seconds": 1086.2491572647705,
+        "sha256": "84f18c5844b478aeec5c499764fd37f2af4eca18e5d1e63bd9588fb0694d5f43",
+        "shape": [
+          5183,
+          768
+        ]
+      },
+      "queries": {
+        "rows": 1109,
+        "seconds": 50.05170983116841,
+        "sha256": "f0cfb173dca9c9579d0e5e25adb482aa5dd4b3f4607b235ce283dc96e0be5124",
+        "shape": [
+          1109,
+          768
+        ]
+      }
+    },
+    "configuration": {
+      "backend": "litert",
+      "batch_size": 16,
+      "data": "data/scifact",
+      "device": "cpu",
+      "dimension": 768,
+      "encoding_code_sha256": "fd2364eacbacd1a41b738ebed2d9c6402137059e8546c69408b7dec1022988ae",
+      "family": "embeddinggemma2",
+      "max_length": 8192,
+      "model": "embeddinggemma-2-text-vision-440m.litertlm",
+      "model_sha256": "92dcbea108899e5d6e30d919b0744f90d9967e80c67a4ab5503ac16d54f62eb0",
+      "normalization": "L2, float32 stored",
+      "offline": false,
+      "out": "artifacts/scifact_eg2",
+      "overflow": "ERROR",
+      "query_prefix": "task: search result | query: ",
+      "revision": null,
+      "source_hashes": {
+        "corpus": "f4a47c54e01f9dfe7f0cbbcae0e1df17c5a90d6553f3a9d5b1ba32184545b3d8",
+        "queries": "154a75771a103d599b0fdeda71cc75f7eef24a414de06967d72b5bbb07df8e8a"
+      },
+      "threads": 8
+    },
+    "model_info": {
+      "context_tokens": 8192,
+      "dimension": 768,
+      "signature_lengths": [
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        8192
+      ]
+    },
+    "packages": {
+      "datasets": "5.0.0",
+      "litert-lm-api": "0.18.0",
+      "numpy": "2.2.6"
+    },
+    "python": "3.10.22"
+  },
+  "near": {
+    "capped_recall@10": 0.922,
+    "hit@10": 0.9266666666666666,
+    "mrr@10": 0.8251521164021165,
+    "ndcg@10": 0.8438790737724926,
+    "ndcg@100": 0.858307188190617,
+    "ndcg@5": 0.8297362090759628,
+    "recall@10": 0.922,
+    "recall@100": 0.9833333333333333,
+    "recall@5": 0.8811111111111113
+  },
+  "provenance": {
+    "code_sha256": {
+      "__init__.py": "90926c78b52ccb4c22de117054c37942b2a2d639fb8c90c0063c295555d4c7c7",
+      "benchmark.py": "6f36f83bf198989c598ea2336bee3e146e6f244384560074e9067a334abc5c0e",
+      "data.py": "1f55f3fd1512e92e8ff5bd03607c6890b2d002dcf28ab7f38e4ccf4cc02ba16f",
+      "encode.py": "fd2364eacbacd1a41b738ebed2d9c6402137059e8546c69408b7dec1022988ae",
+      "metrics.py": "15d6de85f2fb36df4d6c988f6db1a5bf65936f8e34befb5a4e21e238b8d2f659",
+      "near.py": "74fb12824f3eec7f730a77f7b9234eb2acc78fc539990621418be0269ab5c779"
+    },
+    "config_sha256": "5886dfc5afb39e7d28c7b31e270d5a941ad31fc82456cd7cf6ca4ddb16f888f3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "selection_sha256": "64c8924e03e1e0266f9badf5bb254cd4d81050ca3790b2edba1f1132f5971c97",
+    "test_qrels_sha256": "dd0837044573e7f0a868aa9526a706f66d0e47b49a879ff1fe4b8ff1f826e22f"
+  },
+  "selected": {
+    "alpha": 0.25,
+    "depth": 1,
+    "normalized": true
+  },
+  "storage": {
+    "base_dimension": 768,
+    "baseline_keys_bytes": 15922176,
+    "near_dimension": 1536,
+    "near_keys_bytes": 31844352,
+    "reference_table_bytes": 98304
+  },
+  "test_queries": 300,
+  "validation": {
+    "equation4_max_absolute_score_error": 2.86102294921875e-05,
+    "exact_query_text_overlap": 0,
+    "excluded_dev_query_ids": [
+      "1291",
+      "871"
+    ],
+    "pytrec_eval": "all per-query nDCG@10 and Recall@10/100 match",
+    "query_id_overlap": 0,
+    "retrieval": "exact inner product",
+    "test_selection": false
+  }
+}

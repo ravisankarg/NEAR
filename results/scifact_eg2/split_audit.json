@@ -1,0 +1,11 @@
+{
+  "dev_queries_after_exclusion": 807,
+  "excluded_dev_query_ids": [
+    "1291",
+    "871"
+  ],
+  "original_dev_queries": 809,
+  "reason": "Exact stripped, case-folded text matches a held-out query",
+  "test_queries_unchanged": 300,
+  "test_relevance_used_for_deduplication": false
+}

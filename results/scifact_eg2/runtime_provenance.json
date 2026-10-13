@@ -1,0 +1,8 @@
+{
+  "cached_wheel_path": "local pip HTTP cache (machine-specific path omitted)",
+  "cached_wheel_sha256": "b64e2cf6d7dcb90ff094b74af595cc5d53faa07e0889f967d15df8d3e696b53c",
+  "model_source": "existing local LiteRT CPU/GPU checkpoint; no model modification",
+  "package": "litert-lm-api",
+  "source": "local pip HTTP cache; no package download",
+  "version": "0.18.0"
+}

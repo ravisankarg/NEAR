@@ -1,0 +1,24 @@
+{
+  "candidate_count": 30,
+  "config_sha256": "5886dfc5afb39e7d28c7b31e270d5a941ad31fc82456cd7cf6ca4ddb16f888f3",
+  "dev_baseline": {
+    "capped_recall@10": 1.0,
+    "hit@10": 1.0,
+    "mrr@10": 0.9824452705493597,
+    "ndcg@10": 0.9867057489608441,
+    "ndcg@100": 0.9867057489608441,
+    "ndcg@5": 0.9863611239806439,
+    "recall@10": 1.0,
+    "recall@100": 1.0,
+    "recall@5": 0.9993804213135068
+  },
+  "dev_ndcg@10": 0.9853511566231368,
+  "dev_qrels_sha256": "12e2f0d78dae5b8c5dbe47c42aec249caff8d5a8bafbc3422241ac084c5bb4f0",
+  "embedding_manifest_sha256": "77ff89640d145ba47c6398d3582f85ff30b215d226481949a8d895bf6c9da72d",
+  "selection": {
+    "alpha": 0.25,
+    "depth": 1,
+    "normalized": true
+  },
+  "selection_before_test_evaluation": true
+}

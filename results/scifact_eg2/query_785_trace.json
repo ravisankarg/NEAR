@@ -1,0 +1,155 @@
+{
+  "alpha": 0.25,
+  "depth": 1,
+  "documents": [
+    {
+      "baseline_cosine": 0.7263127565383911,
+      "baseline_rank": 12,
+      "doc_projection_coefficient": 0.9193043112754822,
+      "document_id": "12471115",
+      "judged_relevant": true,
+      "near_rank": 9,
+      "near_score": 20.29559326171875,
+      "residual_cosine": 0.23479315638542175,
+      "scaled_original": 19.366050720214844,
+      "title": "The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies",
+      "weighted_residual_bonus": 0.9295425415039062
+    },
+    {
+      "baseline_cosine": 0.7359701991081238,
+      "baseline_rank": 7,
+      "doc_projection_coefficient": 0.9386464953422546,
+      "document_id": "39285547",
+      "judged_relevant": false,
+      "near_rank": 10,
+      "near_score": 20.25351905822754,
+      "residual_cosine": 0.1591232419013977,
+      "scaled_original": 19.623552322387695,
+      "title": "Microarray analysis of pneumococcal gene expression during invasive disease.",
+      "weighted_residual_bonus": 0.6299664974212646
+    },
+    {
+      "baseline_cosine": 0.7321431636810303,
+      "baseline_rank": 9,
+      "doc_projection_coefficient": 0.9140039086341858,
+      "document_id": "17676273",
+      "judged_relevant": false,
+      "near_rank": 12,
+      "near_score": 20.16581916809082,
+      "residual_cosine": 0.16274616122245789,
+      "scaled_original": 19.521509170532227,
+      "title": "affy--analysis of Affymetrix GeneChip data at the probe level.",
+      "weighted_residual_bonus": 0.6443095803260803
+    },
+    {
+      "baseline_cosine": 0.7265503406524658,
+      "baseline_rank": 11,
+      "doc_projection_coefficient": 0.9213171601295471,
+      "document_id": "46602807",
+      "judged_relevant": false,
+      "near_rank": 11,
+      "near_score": 20.172264099121094,
+      "residual_cosine": 0.2020413875579834,
+      "scaled_original": 19.372385025024414,
+      "title": "Comparison of agar dilution, microdilution, and disk elution methods for measuring the synergy of cefotaxime and its metabolite against anaerobes.",
+      "weighted_residual_bonus": 0.7998787760734558
+    },
+    {
+      "baseline_cosine": 0.7317042350769043,
+      "baseline_rank": 10,
+      "doc_projection_coefficient": 0.9096916913986206,
+      "document_id": "7396492",
+      "judged_relevant": false,
+      "near_rank": 8,
+      "near_score": 20.296794891357422,
+      "residual_cosine": 0.19878540933132172,
+      "scaled_original": 19.50980567932129,
+      "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)",
+      "weighted_residual_bonus": 0.7869884371757507
+    }
+  ],
+  "explanation_limit": "The numerical residual contribution is measured. Labels such as generic microarray similarity describe a plausible interpretation, not a decoded embedding feature or proof of semantic causality.",
+  "metric_after": {
+    "capped_recall@10": 1.0,
+    "hit@10": 1.0,
+    "mrr@10": 0.1111111111111111,
+    "ndcg@10": 0.3010299956639812,
+    "ndcg@100": 0.3010299956639812,
+    "ndcg@5": 0.0,
+    "recall@10": 1.0,
+    "recall@100": 1.0,
+    "recall@5": 0.0
+  },
+  "metric_before": {
+    "capped_recall@10": 0.0,
+    "hit@10": 0.0,
+    "mrr@10": 0.0,
+    "ndcg@10": 0.0,
+    "ndcg@100": 0.27023815442731974,
+    "ndcg@5": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 1.0,
+    "recall@5": 0.0
+  },
+  "normalized": true,
+  "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+  "query_anchor_ids": [
+    9,
+    15,
+    2,
+    4
+  ],
+  "query_anchor_weights": [
+    0.28727689385414124,
+    0.2548632323741913,
+    0.2300787717103958,
+    0.22778113186359406
+  ],
+  "query_id": "785",
+  "query_projection_coefficient": 0.7591440677642822,
+  "relevant_document": {
+    "_id": "12471115",
+    "source": "SciFact corpus, document 12471115; full third-party abstract omitted from public copy",
+    "title": "The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies"
+  },
+  "relevant_document_nearest_neighbors": [
+    {
+      "id": "21644993",
+      "title": "Population density profiles of nasopharyngeal carriage of 5 bacterial species in pre-school children measured using quantitative PCR offer potential insights into the dynamics of transmission."
+    },
+    {
+      "id": "54440",
+      "title": "Empirical Bayesian models for analysing molecular serotyping microarrays"
+    },
+    {
+      "id": "39285547",
+      "title": "Microarray analysis of pneumococcal gene expression during invasive disease."
+    },
+    {
+      "id": "45908102",
+      "title": "Cluster sampling to assess immunization coverage: a review of experience with a simplified sampling method."
+    },
+    {
+      "id": "18275697",
+      "title": "Cell-mediated immunity and antibody responses elicited by attenuated Salmonella enterica Serovar Typhi strains used as live oral vaccines in humans."
+    },
+    {
+      "id": "9142761",
+      "title": "The IC(50) of anti-Pfs25 antibody in membrane-feeding assay varies among species."
+    },
+    {
+      "id": "37969403",
+      "title": "Cytokine production patterns and lymphoproliferative responses in volunteers orally immunized with attenuated vaccine strains of Salmonella typhi."
+    },
+    {
+      "id": "8063697",
+      "title": "Acellular pertussis vaccines protect against disease but fail to prevent infection and transmission in a nonhuman primate model."
+    }
+  ],
+  "tau_normalized_residual": 0.06314750378060072,
+  "tau_original": 0.037504433273346946,
+  "tied_max_recall10_gain_query_ids": [
+    "128",
+    "785"
+  ]
+}

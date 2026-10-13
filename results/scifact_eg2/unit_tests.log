@@ -1,0 +1,17 @@
+test_covariance_scale_matches_all_pairs_including_self (test_near.NearTests) ... ok
+test_degenerate_bank_is_finite (test_near.NearTests) ... ok
+test_equation4_matches_explicit_score_all_variants (test_near.NearTests) ... ok
+test_hand_computed_graded_ndcg_and_uncapped_recall (test_near.NearTests) ... ok
+test_invalid_input_fails (test_near.NearTests) ... ok
+test_nearest_neighbor_direction_by_hand (test_near.NearTests) ... ok
+test_paired_bootstrap_identical_is_zero (test_near.NearTests) ... ok
+test_query_routes_top_r_anchors_and_softmaxes_by_hand (test_near.NearTests) ... ok
+test_residual_is_orthogonal_to_local_reference (test_near.NearTests) ... ok
+test_self_exclusion_and_k_cap_even_for_duplicate_vectors (test_near.NearTests) ... ok
+test_tables_are_query_independent_and_round_trip (test_near.NearTests) ... ok
+test_zero_alpha_recovers_cosine_ranking (test_near.NearTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.076s
+
+OK
