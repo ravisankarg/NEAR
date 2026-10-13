@@ -1,0 +1,5 @@
+numpy==2.2.6
+datasets==5.0.0
+litert-lm-api==0.18.0
+pytrec-eval>=0.5
+matplotlib>=3.10

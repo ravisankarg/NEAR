@@ -1,0 +1,5 @@
+# Optional full-precision encoder backend and ANN fidelity audit.
+# Neither is needed for the measured LiteRT + exact-search experiment.
+sentence-transformers>=5.0
+transformers>=5.0
+faiss-cpu>=1.8
