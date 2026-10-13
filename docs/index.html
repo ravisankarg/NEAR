@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ec">
+  <title>NEAR, under the microscope — residual retrieval with EmbeddingGemma2</title>
+  <meta name="description" content="A reproducible SciFact experiment: NEAR on EmbeddingGemma2, one rank-12 to rank-9 recovery, and a mathematical account of when residual similarity helps or hurts.">
+  <meta property="og:title" content="NEAR, under the microscope">
+  <meta property="og:description" content="Residual geometry. A small encoder. A careful retrieval experiment. Explore the results, the working example, and the limits of the mathematics.">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ravisankarg.github.io/NEAR/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#article">Skip to article</a>
+<header class="masthead wrap">
+  <a class="wordmark" href="#top"><span class="mark" aria-hidden="true">N↗</span> Ravi's research notes</a>
+  <a class="source-link" href="https://github.com/ravisankarg/NEAR">Code &amp; evidence <span aria-hidden="true">↗</span></a>
+</header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="title">
+    <div class="hero-copy">
+      <p class="eyebrow">Research note 01 <span>13 October 2026</span></p>
+      <h1 id="title">NEAR, under<br>the <em>microscope.</em></h1>
+      <p class="dek">Residual geometry, a small encoder, and a careful retrieval experiment.</p>
+      <p class="hero-summary">Can subtracting what documents have in common help us find the one that matters? We implemented NEAR on EmbeddingGemma2, measured it on SciFact, and followed the idea all the way to its mathematical limits.</p>
+      <div class="hero-actions"><a class="button" href="#results">Read the results <span aria-hidden="true">↓</span></a><a href="#proof">Explore the mathematics</a></div>
+      <p class="byline">By <a href="https://github.com/ravisankarg">Ravi Sankar Guntur</a> · Independent implementation · Text retrieval</p>
+    </div>
+    <figure class="hero-figure">
+      <div class="figure-kicker"><span class="dot"></span> One measured recovery <span>Query 785</span></div>
+      <svg viewBox="0 0 400 360" role="img" aria-labelledby="hero-chart-title hero-chart-desc">
+        <title id="hero-chart-title">The relevant document moves from rank 12 to rank 9</title>
+        <desc id="hero-chart-desc">A single SciFact example: PneuCarriage enters the top ten after NEAR scoring. The line shows rank change, not vector geometry.</desc>
+        <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#b9beb6"/></pattern></defs>
+        <rect x="0" y="0" width="400" height="360" fill="url(#grid)"/>
+        <line x1="35" x2="365" y1="158" y2="158" stroke="#99a19a" stroke-dasharray="5 6"/>
+        <text x="36" y="146" class="hero-svg-small">TOP 10 CUTOFF</text>
+        <path d="M85 250 C175 250 213 98 316 98" fill="none" stroke="#224ae8" stroke-width="4"/>
+        <circle cx="85" cy="250" r="8" fill="#f5f3ec" stroke="#224ae8" stroke-width="3"/>
+        <circle cx="316" cy="98" r="8" fill="#224ae8"/>
+        <text x="62" y="228" class="hero-svg-rank">12</text>
+        <text x="296" y="76" class="hero-svg-rank">9</text>
+        <text x="49" y="288" class="hero-svg-label">Baseline</text>
+        <text x="295" y="134" class="hero-svg-label">NEAR</text>
+      </svg>
+      <figcaption>A document crosses the retrieval boundary.<br><strong>A useful example. A separate question from a universal guarantee.</strong></figcaption>
+    </figure>
+  </section>
+  <div class="finding-strip wrap"><span class="eyebrow">The measured headline</span><p><strong>+0.53 points</strong> nDCG@10 <span class="strip-divider">/</span> 95% interval <strong>−0.33 to +1.39</strong> <span class="strip-note">Small. Inconclusive. Worth understanding.</span></p></div>
+  <div class="reading-layout wrap">
+    <aside class="contents" aria-label="On this page"><p class="eyebrow">In this note</p><nav><a href="#idea">01 <span>The second signal</span></a><a href="#experiment">02 <span>The experiment</span></a><a href="#results">03 <span>The results</span></a><a href="#example">04 <span>A query that changed</span></a><a href="#proof">05 <span>What can be proved?</span></a><a href="#depth">06 <span>More signals?</span></a><a href="#reproduce">07 <span>Run it yourself</span></a><a href="#references">08 <span>Sources &amp; evidence</span></a></nav><p class="contents-note">Measured results and illustrative geometry are labeled separately throughout.</p></aside>
+    <article id="article">
+      <section id="idea" class="chapter">
+        <p class="section-number">01 / The idea</p><h2>Compare what remains.</h2>
+        <p class="lead">A high cosine score says that two embedding directions align. It does not say which part of that alignment provides the evidence the query needs.</p>
+        <p>Think of a neighborhood of papers about microarrays. Shared terminology can make many of them close to a query, even when only one addresses its specific comparison. Calling that overlap a “shared topic” is an intuition: an embedding direction is not a decoded word or an explicitly labeled concept.</p>
+        <p>NEAR averages a document’s neighboring vectors to form a unit reference <var>c</var>, then subtracts the document’s projection onto it. The residual is:</p>
+        <div class="equation" role="math" aria-label="r equals z minus the dot product of z and c times c"><span>r = z − (z · c)c</span><small>The removed part points along the reference. The residual is perpendicular to it.</small></div>
+        <div class="mechanism"><div><span class="step-label">Original view</span><strong>cos(q, d)</strong><p>Alignment of the full embeddings.</p></div><span class="mechanism-plus" aria-hidden="true">+</span><div><span class="step-label">Residual view</span><strong>cos(r<sub>q</sub>, r<sub>d</sub>)</strong><p>Alignment after local projection removal.</p></div></div>
+        <p>A query gets its own reference from a precomputed routing table. References differ across documents and queries. Further layers repeat the operation on normalized residuals. The method retains the original view and adds weighted residual views; concatenated keys implement the fused score through one inner-product search. No encoder training is required. <a class="citation" href="https://arxiv.org/html/2610.13314v1#S3">[NEAR §3]</a></p>
+        <p>In our run, “second signal” means a cosine between two transformed versions of the same encoder’s vectors. It adds a different comparison, rather than new text or another model’s judgment. Projection subtraction is also different from simply subtracting the neighborhood mean.</p>
+        <div class="equation" role="math" aria-label="S equals s zero divided by tau zero plus alpha over L times the sum of s ell divided by tau ell"><span>S(q, d) = s<sub>0</sub>/τ<sub>0</sub> + (α/L) ∑<sub>ℓ=1…L</sub> s<sub>ℓ</sub>/τ<sub>ℓ</sub></span><small>s₀ is the original cosine; sℓ is a residual score. Corpus-derived scales τ make the views comparable. α controls their total weight.</small></div>
+      </section>
+      <section id="experiment" class="chapter">
+        <p class="section-number">02 / The experiment</p><h2>A small encoder.<br>A frozen comparison.</h2>
+        <p>We compared exact cosine retrieval against NEAR using identical cached embeddings over the full SciFact corpus. This is a transfer experiment on a standard BEIR dataset, not a reproduction of the paper’s eight LMEB tasks.</p>
+        <dl class="protocol-grid"><div><dt>Encoder</dt><dd>EmbeddingGemma2<small>INT4 QAT · text path · LiteRT 0.18.0</small></dd></div><div><dt>Corpus</dt><dd>5,183 documents<small>Scientific titles and abstracts</small></dd></div><div><dt>Selection / evaluation</dt><dd>807 / 300 queries<small>Development only / held-out test</small></dd></div><div><dt>Selected NEAR</dt><dd>L = 1 · α = 0.25<small>Normalized residuals · 768 → 1,536 dimensions</small></dd></div></dl>
+        <p>The model is the text path of the 440M text/vision LiteRT package: a 270M text backbone with 768-dimensional output. Images were not used. Inputs used the model-card search/document formatting, an 8,192-token limit, and overflow errors instead of silent truncation. <a class="citation" href="https://huggingface.co/litert-community/embeddinggemma-2-text-vision-440m-litert-lm">[Checkpoint]</a></p>
+        <p>We searched 30 configurations on development: depths 1–3, raw or normalized residuals, and five positive α values. Neighborhood size was 50; routing used up to 4 of 16 anchors. All 300 test queries were retained. Two training queries with exact test-text duplicates were excluded before scoring, leaving 807 development queries.</p>
+        <details><summary>Inspect the evaluation boundaries</summary><ul><li>The document bank is shared between development and test. Queries are held out; related claims can share evidence.</li><li>Hyperparameters were selected before test scoring. No test relevance judgments selected the configuration.</li><li>Clustering uses seeded spherical k-means++, three restarts, and at most 100 iterations. These implementation choices fill details unspecified by the paper.</li><li>Bootstrap intervals use 10,000 paired query resamples with a fixed selected configuration. Related claims may be dependent; selection uncertainty is not included.</li><li>Pretraining exposure to SciFact is unknown. The full-precision backend and optional HNSW branch were not evaluated in this run.</li></ul><a href="https://github.com/ravisankarg/NEAR/blob/main/configs/scifact.json">Read the full frozen protocol ↗</a></details>
+      </section>
+      <section id="results" class="chapter">
+        <p class="section-number">03 / Held-out results</p><h2>A modest gain, with limits.</h2>
+        <p class="lead">The nDCG@10 point estimate improves by 0.53 points. Its paired 95% bootstrap interval crosses zero. This run does not establish a reliable improvement.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Benchmark metrics; scroll horizontally on narrow screens"><table><caption>All scores ×100. Changes and confidence intervals are percentage points.</caption><thead><tr><th scope="col">Metric</th><th scope="col">Baseline</th><th scope="col">NEAR</th><th scope="col">Change</th><th scope="col">95% interval</th></tr></thead><tbody id="metrics-body"><tr><th scope="row">nDCG@10</th><td>83.86</td><td>84.39</td><td>+0.53</td><td>[−0.33, +1.39]</td></tr><tr><th scope="row">Recall@10</th><td>91.93</td><td>92.20</td><td>+0.27</td><td>[−0.80, +1.47]</td></tr><tr><th scope="row">Recall@100</th><td>99.00</td><td>98.33</td><td>−0.67</td><td>[−1.67, 0.00]</td></tr><tr><th scope="row">MRR@10</th><td>81.73</td><td>82.52</td><td>+0.79</td><td>[−0.33, +1.91]</td></tr></tbody></table></div>
+        <figure class="result-figure"><img src="data/comparison.svg" width="1260" height="560" alt="Measured baseline versus NEAR metrics, with paired confidence intervals for their changes" loading="lazy"><figcaption>The uncertainty belongs to the change between methods, evaluated on the same test queries. <a href="data/comparison.svg">Open the full figure ↗</a></figcaption></figure>
+        <p>Recall@5 also fell, from 89.28 to 88.11. On nDCG@10, 16 queries improved, 20 worsened, and 264 were unchanged. The small positive mean reflects the sizes of those changes, not a majority of queries improving.</p>
+        <aside class="editor-note"><span class="eyebrow">The development result matters</span><p>The best positive-weight NEAR candidate scored <strong>98.54</strong> nDCG@10, below the baseline’s <strong>98.67</strong>. A development-only choice between these methods would retain the baseline. The nearly saturated development split also provides limited selection headroom.</p></aside>
+        <div class="costs"><div><strong>2×</strong><span>float32 key storage<br>15.18 → 30.37 MiB</span></div><div><strong>0.39 → 1.02 ms</strong><span>median transform + exact retrieval<br>CPU · encoder time excluded</span></div><div><strong>96 KiB</strong><span>query reference tables<br>additional to search keys</span></div></div>
+        <p class="small">Building all three candidate layers took 7.14 seconds. Timing is a local microbenchmark, not a device-wide or end-to-end latency claim. Key sizes exclude research caches and ANN graph overhead.</p>
+      </section>
+      <section id="example" class="chapter">
+        <p class="section-number">04 / A query that changed</p><h2>From just outside<br>to inside the top ten.</h2>
+        <span class="evidence-label">Measured · SciFact query 785</span>
+        <blockquote>Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.</blockquote>
+        <p>The judged evidence is <cite>The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies</cite>. It compares serotyping methods and discusses microarray with culture amplification. Retrieving evidence does not mean endorsing the query’s claim.</p>
+        <div class="rank-story"><div><small>Cosine baseline</small><strong>12</strong></div><span aria-hidden="true">→</span><div><small>NEAR</small><strong>9</strong></div><p>Recall@10: <strong>0 → 1</strong><br>One judged relevant document.<br>Tied for the largest gain with query 128.</p></div>
+        <p>A competing document, <cite>Microarray analysis of pneumococcal gene expression during invasive disease</cite>, had a higher original cosine. PneuCarriage had the higher residual cosine. The weighted difference was enough to reverse this pair.</p>
+        <div class="lab measured-lab" id="query-lab"><div class="lab-heading"><div><span class="evidence-label">Measured vectors · adjustable scoring</span><h3>How much residual weight changes this pair?</h3></div><button type="button" id="reset-alpha" class="quiet-button">Restore measured α</button></div><label class="range-label" for="alpha">Residual weight α <output id="alpha-value">0.250</output></label><input id="alpha" type="range" min="0" max="0.6" step="0.005" value="0.25"><div class="table-scroll"><table class="pair-table"><thead><tr><th>Document</th><th>Original cosine</th><th>Residual cosine</th><th>Fused score</th></tr></thead><tbody><tr><th>PneuCarriage <small>judged relevant</small></th><td>0.7263</td><td>0.2348</td><td id="relevant-score">20.2956</td></tr><tr><th>Gene expression <small>competitor</small></th><td>0.7360</td><td>0.1591</td><td id="competitor-score">20.2535</td></tr></tbody></table></div><div class="margin-track" aria-hidden="true"><span>Competitor ahead</span><div><i id="margin-indicator"></i></div><span>Relevant ahead</span></div><p id="pair-status" class="lab-result" aria-live="polite">At α = 0.250, the relevant document leads by 0.0421.</p><p class="small">The crossover is α ≈ 0.215. Moving the slider recomputes only this pair from saved scores. It does not rerun retrieval or establish a new top-10 rank. At the measured α = 0.25, the full run moved PneuCarriage 12 → 9.</p><noscript><p>The interactive comparison requires JavaScript. At the measured α, the original disadvantage is −0.2575 and the residual advantage is +0.2996, giving +0.0421 overall.</p></noscript></div>
+        <div class="equation"><span>−0.2575 + 0.2996 = <strong>+0.0421</strong></span><small>Original disadvantage + weighted residual advantage = final pairwise advantage.</small></div>
+        <p>Its cosine did <em>not</em> increase: 0.7263 became 0.2348 in the residual view. Its advantage over this competitor improved. Describing the removed information as “generic microarray content” is a plausible interpretation, not a proven decoding of the embedding.</p>
+        <p class="small">This example was chosen after evaluation to explain a large Recall@10 gain, not to tune parameters. A counterexample from the same run: query 185’s judged document fell from rank 1 to 4, reducing nDCG@10 by 56.93 points. <a href="https://github.com/ravisankarg/NEAR/blob/main/results/scifact_eg2/query_785_trace.json">Inspect the query trace ↗</a></p>
+      </section>
+      <section id="proof" class="chapter">
+        <p class="section-number">05 / The mathematical question</p><h2>What, exactly,<br>can we prove?</h2>
+        <p class="lead">Projection is exact linear algebra. Better relevance is a conditional outcome.</p>
+        <p>The discussion began with an apparently simple question: does subtracting the shared component increase similarity to the relevant document? That mixes three different claims. Absolute cosine can rise or fall. Relative ordering can improve or worsen. Neither automatically establishes a gain in dataset-level recall.</p>
+        <p>For a tractable derivation, assume unit query and document vectors use the <strong>same unit reference c</strong>. This is an illustrative special case; actual NEAR uses separate local references. Let s = q · d, a = q · c, and b = d · c. For nonzero residuals:</p>
+        <div class="derivation"><div><span class="derivation-label">Dot product after removal</span><span class="formula">r<sub>q</sub> · r<sub>d</sub> = (q − ac) · (d − bc) = s − ab</span></div><div><span class="derivation-label">Lengths after removal</span><span class="formula">‖r<sub>q</sub>‖ = √(1 − a²), &nbsp; ‖r<sub>d</sub>‖ = √(1 − b²)</span></div><div><span class="derivation-label">Residual cosine</span><span class="formula">t = <span class="fraction"><span>s − ab</span><span>√(1 − a²) √(1 − b²)</span></span></span></div></div>
+        <p>The numerator removes shared alignment. The denominator renormalizes what remains. Both affect the final cosine. Algebra gives an exact condition:</p>
+        <div class="equation"><span>t &gt; s &nbsp; ⇔ &nbsp; s[1 − √((1 − a²)(1 − b²))] &gt; ab</span><small>Relevance labels alone do not imply this geometric inequality.</small></div>
+        <p>If a = b, then t − s = a²(s − 1)/(1 − a²) ≤ 0. Removing an equally strong shared component cannot increase this cosine. It can still expand a relevant document’s margin: original scores 0.98 and 0.92 become 0.80 and 0.20 when a² = 0.9. Both scores fall; their gap grows from 0.06 to 0.60.</p>
+        <p>For a relevant document R and competitor C, the shared-reference residual ranking favors R exactly when:</p>
+        <div class="equation"><span><span class="fraction"><span>s<sub>R</sub> − ab<sub>R</sub></span><span>√(1 − b<sub>R</sub>²)</span></span> &gt; <span class="fraction"><span>s<sub>C</sub> − ab<sub>C</sub></span><span>√(1 − b<sub>C</sub>²)</span></span></span><small>The query’s residual length cancels. If bR = bC, this special case preserves the original ordering.</small></div>
+        <div class="lab geometry-lab"><div class="lab-heading"><div><span class="evidence-label illustrative">Illustrative · exact 3D vectors</span><h3>Change the direction. Change the outcome.</h3></div></div><p>q = (3, 1, 0), R = (1, 1, 0), C = (3, 0, 1). R is designated relevant for this constructed example.</p><div class="segmented" role="group" aria-label="Projection reference"><button type="button" data-projection="original" aria-pressed="true">Original</button><button type="button" data-projection="x" aria-pressed="false">Remove x</button><button type="button" data-projection="z" aria-pressed="false">Remove z</button></div><div class="cosine-bars"><div><span>Relevant R</span><div class="bar-track"><i id="toy-relevant-bar"></i></div><output id="toy-relevant">0.8944</output></div><div><span>Competitor C</span><div class="bar-track competitor"><i id="toy-competitor-bar"></i></div><output id="toy-competitor">0.9000</output></div></div><p id="toy-status" class="lab-result" aria-live="polite">The original embeddings slightly favor the competitor.</p><p id="toy-vectors" class="vector-caption">q = (3, 1, 0) · R = (1, 1, 0) · C = (3, 0, 1)</p><p class="small">The bars show cosine on the fixed interval [0, 1]. Removing x yields 1 versus 0. Removing z instead yields 0.8944 versus 0.9487, making the wrong preference stronger. These axes illustrate arithmetic, not decoded semantic features.</p></div>
+        <details><summary>What changes with NEAR’s separate references?</summary><p>Set a = q · c<sub>q</sub> and b = d · c<sub>d</sub>. Expanding the actual residual dot product gives:</p><div class="equation"><span>r<sub>q</sub> · r<sub>d</sub> = q · d − b(q · c<sub>d</sub>) − a(d · c<sub>q</sub>) + ab(c<sub>q</sub> · c<sub>d</sub>)</span></div><p>Divide by √(1 − a²)√(1 − b²) for normalized residual cosine. Extra cross-terms appear; the shared-reference shortcut no longer applies. There is still no relevance guarantee. Zero-length residuals have undefined mathematical cosine; the implementation maps them to zero vectors for numerical stability.</p></details>
+        <p>For one-layer NEAR, the condition for overcoming an original ranking error is even more practical:</p>
+        <div class="equation"><span><span class="fraction"><span>α(t<sub>R</sub> − t<sub>C</sub>)</span><span>τ<sub>1</sub></span></span> &gt; <span class="fraction"><span>s<sub>C</sub> − s<sub>R</sub></span><span>τ<sub>0</sub></span></span></span><small>The weighted residual advantage must exceed the original disadvantage.</small></div>
+        <p>That explains our measured pair reversal exactly. It does not prove that the chosen references consistently preserve relevance. Also, comparing R’s residual cosine with C’s <em>original</em> cosine mixes scoring views; it is not the comparison used by NEAR.</p>
+      </section>
+      <section id="depth" class="chapter">
+        <p class="section-number">06 / Third and fourth signals</p><h2>More removal<br>can erase the distinction.</h2>
+        <p>There is no monotonic march toward the correct document. Consider q = (4, 2, 1), R = (1, 2, 1), C = (4, 0, 1). Remove x, then y. The first residual fixes the ranking. The next makes every vector point in the same direction.</p>
+        <div class="lab"><div class="lab-heading"><div><span class="evidence-label illustrative">Illustrative · sequential projections</span><h3>One removal too many</h3></div></div><div class="segmented" role="group" aria-label="Number of residual layers"><button type="button" data-depth="0" aria-pressed="true">Original</button><button type="button" data-depth="1" aria-pressed="false">One residual</button><button type="button" data-depth="2" aria-pressed="false">Two residuals</button></div><div class="depth-display"><div><span>Relevant cosine</span><strong id="depth-relevant">0.8018</strong></div><div><span>Competitor cosine</span><strong id="depth-competitor">0.8997</strong></div><div><span>Relevant’s margin</span><strong id="depth-margin">−0.0980</strong></div></div><p id="depth-status" class="lab-result" aria-live="polite">The competitor wins on the original embeddings.</p><p class="small">At two residual layers all three remaining vectors are (0, 0, 1): both cosines equal 1, but the new signal has zero discrimination. The complete fused score still includes earlier views.</p></div>
+        <p>The combined score also has an exact condition. Let g<sub>ℓ</sub> = [s<sub>ℓ</sub>(q, R) − s<sub>ℓ</sub>(q, C)]/τ<sub>ℓ</sub>, and let ḡ<sub>L</sub> be the average advantage across the current L residual views. Then the final margin is M<sub>L</sub> = g<sub>0</sub> + αḡ<sub>L</sub>. Adding one residual changes it by:</p>
+        <div class="equation"><span>M<sub>L+1</sub> − M<sub>L</sub> = <span class="fraction"><span>α</span><span>L + 1</span></span> (g<sub>L+1</sub> − ḡ<sub>L</sub>)</span><small>Earlier views, score scales, and α &gt; 0 are held fixed. This follows by subtracting the two averages.</small></div>
+        <p>A new signal improves the pairwise margin only if its advantage exceeds the previous residual average. Equal means unchanged; lower means worse—even if it slightly favors R. This comparison concerns one competitor; recall depends on crossing the cutoff against the full candidate set.</p>
+        <p>Removing exactly the same direction again does nothing further: the projection operator is idempotent. New directions can help, remove evidence, or amplify unstable directions after normalization. Depth is an empirical choice. Our development search selected just one residual layer.</p>
+        <aside class="editor-note"><span class="eyebrow">What is proved, and what is measured</span><p>The score identity and the conditional inequalities follow from algebra. Our rank changes and aggregate metrics are measurements. The assumption that neighborhood-derived residuals capture relevance more cleanly remains an empirical hypothesis.</p></aside>
+      </section>
+      <section id="reproduce" class="chapter">
+        <p class="section-number">07 / Reproduce &amp; inspect</p><h2>Keep the experiment<br>open to inspection.</h2>
+        <p>The repository includes the independent NumPy implementation, frozen protocol, development sweep, per-query metrics, top-100 TREC runs, query trace, and numerical tests. The benchmark core is preserved with its recorded code hashes.</p>
+        <div class="code-block"><div><span>Fresh environment · Python 3.10+</span><button type="button" class="copy-button" data-copy="reproduce-code">Copy</button></div><pre id="reproduce-code"><code>git clone https://github.com/ravisankarg/NEAR.git
+cd NEAR
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/download_scifact.py --out data/scifact
+
+# Download the linked LiteRT checkpoint separately.
+NEAR_MODEL=/path/to/model.litertlm bash scripts/run_benchmark.sh</code></pre></div>
+        <p>The full rerun requires the model and dataset; they are not bundled. The measured checkpoint’s SHA-256 is recorded. A different model, quantization, runtime, or dataset export may produce different results. The fresh-download path is supplied for reproduction; our measured run used locally cached inputs.</p>
+        <div class="code-block"><div><span>Inspect published results without re-encoding</span><button type="button" class="copy-button" data-copy="verify-code">Copy</button></div><pre id="verify-code"><code>python scripts/verify_published_results.py
+python -m unittest discover -s tests -v
+node tests/test_blog.mjs
+python3 -m http.server 8000 --directory docs</code></pre></div>
+        <p>The result verifier uses only Python’s standard library. Numerical benchmark tests require NumPy. Browser-lab tests require Node. The site works without a build step, external fonts, analytics, or a CDN. <a href="https://github.com/ravisankarg/NEAR#reproduce-the-benchmark">Read the reproduction guide ↗</a></p>
+        <p class="small">The original run’s 12 numerical tests passed. Per-query nDCG@10 and Recall@10/100 matched pytrec_eval. Explicit fusion and concatenated-key scoring agreed within 2.86 × 10<sup>−5</sup>; all top-10 rankings matched. Ten queries had near-tie ordering changes within the top 100, with identical top-100 sets and evaluated metrics.</p>
+      </section>
+      <section id="references" class="chapter references">
+        <p class="section-number">08 / Sources &amp; evidence</p><h2>Follow the evidence.</h2>
+        <ol><li><a href="https://arxiv.org/html/2610.13314v1">Luo et al. · NEAR: Neighborhood-Aware Residuals for Memory Retrieval</a><span>The method being implemented. This blog’s mathematical examples and derivations are explanatory analysis, not a theorem claimed by the paper.</span></li><li><a href="https://huggingface.co/litert-community/embeddinggemma-2-text-vision-440m-litert-lm">EmbeddingGemma2 · LiteRT text/vision checkpoint</a><span>Model identity, parameter breakdown, and quantization. Only its text path was evaluated.</span></li><li><a href="https://github.com/allenai/scifact">SciFact</a> · <a href="https://github.com/beir-cellar/beir">BEIR</a> · <a href="https://huggingface.co/datasets/mteb/scifact">MTEB mirror</a><span>Dataset and retrieval benchmark sources.</span></li><li><a href="https://github.com/ravisankarg/NEAR/tree/main/results/scifact_eg2">Full experiment record</a><span>Aggregate and per-query scores, development selection, split audit, and retrieval runs.</span></li><li><a href="https://github.com/ravisankarg/NEAR/blob/main/near_retrieval/near.py">Implementation</a> · <a href="https://github.com/ravisankarg/NEAR/blob/main/tests/test_near.py">Numerical tests</a> · <a href="data/experiment.json">Page data (JSON)</a><span>Review the arithmetic behind the method and the interactive measured example.</span></li></ol>
+        <p class="closing">A better score on one query is a mechanism to inspect. A better retriever is a claim to test.</p>
+      </section>
+    </article>
+  </div>
+</main>
+<footer class="wrap"><a class="wordmark" href="#top"><span class="mark" aria-hidden="true">N↗</span> NEAR, under the microscope</a><p>Independent research note · Ravi Sankar Guntur · 2026</p><a href="https://github.com/ravisankarg/NEAR">Explore the repository ↗</a></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
