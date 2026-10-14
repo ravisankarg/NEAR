@@ -1,0 +1,3168 @@
+{
+  "caveat": "Judged relevance is sparse evidence relevance. Unjudged destinations are not proven semantically irrelevant.",
+  "label_transfer_per_query": [
+    {
+      "neighbor_judged_relevance_mass": 0.04984987182760949,
+      "query_id": "1",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.19693841514499896
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "100",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04931088879130992
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.13732344510234334,
+      "query_id": "1012",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8366266860750396
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1014",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5329117188018507
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.041523959932481924,
+      "query_id": "1019",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.22742861828548186
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1020",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3169896433675795
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1021",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.30376918493768407
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.01892610862942429,
+      "query_id": "1024",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.014770928600079027
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.6541385335745387,
+      "query_id": "1029",
+      "relevant_seeds": 3,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 3,
+      "seed_judged_relevance_mass": 0.6489332431723921
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.26423790720368046,
+      "query_id": "1041",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 1,
+      "seed_judged_relevance_mass": 0.38942302017752245
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1049",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.13595390312798158
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1062",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.41176238215692285
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1086",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9808814771196263
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.07082407080121737,
+      "query_id": "1088",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3043463525027953
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1089",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6805821050188515
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1099",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.006128835053807025
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1100",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.005549546738610418
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1104",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.776031494031999
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.18595419756922127,
+      "query_id": "1107",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.17751100280981982
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.24944274154519838,
+      "query_id": "1110",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06573496075651251
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.01546979930288443,
+      "query_id": "1121",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06846392144342844
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "113",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.641065968308339
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1130",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3255903013335847
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.31303655322018736,
+      "query_id": "1132",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 1,
+      "seed_judged_relevance_mass": 0.30372176277979857
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.024849566730621993,
+      "query_id": "1137",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5445542258285233
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1140",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.48533618207216633
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1144",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9294427051040834
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1146",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9810177179411654
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "115",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7184652872339097
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04587313588043986,
+      "query_id": "1150",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.44398124356652685
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1163",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5458062069820361
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1175",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.32223517140627916
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1179",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.13941846125073584
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.1834010892328732,
+      "query_id": "118",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6529662748956031
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1180",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.27006968064565967
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.17332496334157627,
+      "query_id": "1185",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5499778719902121
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.41445819582123405,
+      "query_id": "1187",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09946190023829682
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.011300723360510353,
+      "query_id": "1191",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.14964781453203874
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1194",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4916768687995759
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.38912445047320227,
+      "query_id": "1196",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.34966753747900625
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.4445536178111661,
+      "query_id": "1197",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3027081479031318
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1199",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1200",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.027295528952150674
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.1079007624699855,
+      "query_id": "1202",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.36403036743183315
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1204",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.30122543254551454
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1207",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6106706573282985
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.012357009354471541,
+      "query_id": "1213",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2070258502835535
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1216",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.45885345915539505
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.047873044400464956,
+      "query_id": "1221",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04702024350987791
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04249278677046062,
+      "query_id": "1225",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.29121345865099874
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.07457725907024038,
+      "query_id": "1226",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02973296419475112
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1232",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.727798711387628
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.06743860959773605,
+      "query_id": "124",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.40238492689653266
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.020207780569618753,
+      "query_id": "1241",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.23351995373636722
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1245",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.18880157507279902
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.28663709589810404,
+      "query_id": "1259",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5179885153366665
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1262",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3724703967224262
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04573369511243681,
+      "query_id": "1266",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5017408494798686
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.027065891162871954,
+      "query_id": "127",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11422388198960041
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.01579171871384555,
+      "query_id": "1270",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8691693797541197
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1271",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8616959167590149
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1272",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04887627182499746
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.003889016896468686,
+      "query_id": "1273",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6511431064780054
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.3985421461602455,
+      "query_id": "1274",
+      "relevant_seeds": 3,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.5102951363617941
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1278",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.08699035508803414
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1279",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0605510322770244
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.014053240383719719,
+      "query_id": "128",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02562571386568571
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1280",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.00978447162524092
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1281",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.007346038657066673
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1282",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.24816419506304005
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "129",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9214801282121322
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1290",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8338991143875998
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1292",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7488926803820434
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1298",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9619128301625104
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "13",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2493125605462137
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "130",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9326858894863317
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1303",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4035542887618341
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.06208368686892724,
+      "query_id": "1316",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.03451919686061849
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.007001660808446975,
+      "query_id": "1319",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.40686364391493796
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "132",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.008305232446976143
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.008437002595306123,
+      "query_id": "1320",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.32913244696653216
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.36747571906097576,
+      "query_id": "133",
+      "relevant_seeds": 5,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 4,
+      "seed_judged_relevance_mass": 0.37465670272810736
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1332",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.019903250961559316
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.09986620113112643,
+      "query_id": "1335",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.19002957576045318
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.08758494751101593,
+      "query_id": "1336",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.20866859916221364
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1337",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04324945950176126
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1339",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.915086791691696
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1344",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3970027498818017
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1352",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3843629312950406
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.15539573685769828,
+      "query_id": "1359",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7947282609204028
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.031393638183058487,
+      "query_id": "1362",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.048896751578349947
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.037148259442295106,
+      "query_id": "1363",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0954926921699227
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1368",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.25179617615518374
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "137",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9319627843875905
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "1370",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4008886908159436
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.7472018178341366,
+      "query_id": "1379",
+      "relevant_seeds": 4,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 4,
+      "seed_judged_relevance_mass": 0.6568823603226657
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.015145584392374983,
+      "query_id": "1382",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4539262180686236
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.022033379165081534,
+      "query_id": "1385",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.272781433837447
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04248576774209295,
+      "query_id": "1389",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.599333393653929
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.043705064223581204,
+      "query_id": "1395",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.22709325501703126
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04737484574211227,
+      "query_id": "141",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6449407172372457
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "142",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.42239923697377213
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "143",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4633362931187142
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "146",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5235241403783191
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0997754565829108,
+      "query_id": "148",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09923195182133383
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04089777553604758,
+      "query_id": "163",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6018979904263713
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "171",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6007753811345768
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.8845728760104594,
+      "query_id": "179",
+      "relevant_seeds": 4,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 4,
+      "seed_judged_relevance_mass": 0.8035684279198327
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04662894382352353,
+      "query_id": "180",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6732383762397008
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.09148136131394838,
+      "query_id": "183",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3391689466443947
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "185",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.08028574313262163
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03082429222107768,
+      "query_id": "198",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.48252541941433186
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "208",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.38131171179333373
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.044545971208674116,
+      "query_id": "212",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0350606816607507
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "213",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.37496447085541373
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "216",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1309224473187606
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "217",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.12273714593797998
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "218",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4281940968403482
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "219",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.41551843674595956
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "230",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.14632442157946302
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "232",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.24013370345844717
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03316974652367526,
+      "query_id": "233",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8041096883381464
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.01780188295041065,
+      "query_id": "236",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5833356772462898
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.05582602921246,
+      "query_id": "237",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.12606676084139667
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "238",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04393621888668625
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "239",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.018254480886661074
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "248",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11611602260722362
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "249",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11324881911601832
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.16399120955259,
+      "query_id": "261",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.09867383491798405
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "268",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0707684069261308
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "269",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06024236505231071
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0938981498698407,
+      "query_id": "274",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8595559750804656
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.41324703836562704,
+      "query_id": "275",
+      "relevant_seeds": 3,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.43337989913235836
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.1776696690282911,
+      "query_id": "279",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6440368627020249
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "294",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11244369809608065
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "295",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.05439608171577971
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "298",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6832209810332956
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.10237311322680365,
+      "query_id": "3",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.062398411204572644
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03400713921242392,
+      "query_id": "300",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.16432440654839015
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.049312237004707576,
+      "query_id": "303",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "312",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.07069883984655334
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "314",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.22384736277332598
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "324",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.23229037373864395
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "327",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02971067260139378
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.16083706916161633,
+      "query_id": "338",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6659607218794629
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.006058658967542579,
+      "query_id": "343",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5485406452593491
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04182347698636749,
+      "query_id": "350",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.44631857951212706
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.02634258264600881,
+      "query_id": "354",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7954217670235719
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.5968178891244035,
+      "query_id": "36",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.4079673734953704
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.07171634353883367,
+      "query_id": "362",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.35648204753963797
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "380",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.32793527746350437
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.13075362695182052,
+      "query_id": "384",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3330486775356713
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.15485501761029927,
+      "query_id": "385",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 1,
+      "seed_judged_relevance_mass": 0.07345484830396765
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.032164621848772286,
+      "query_id": "386",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6947773889129182
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "388",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6093832323318263
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "399",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9578318557005918
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "410",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6316361429744585
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "411",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6290581458955694
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "415",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3781527749746531
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03150659599689123,
+      "query_id": "42",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6651160613787
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "421",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3009370889505392
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.11063564470550384,
+      "query_id": "431",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2666105424951019
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "436",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.22318322892478593
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "437",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03828857842096277,
+      "query_id": "439",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.14421621336740914
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03183424616849492,
+      "query_id": "440",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.10288276349682475
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.009349227729219665,
+      "query_id": "443",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6338196577455492
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "452",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.13262025893924878
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.033668151148153115,
+      "query_id": "475",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2861289303478738
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "478",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.38501400267608094
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "48",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11396057737575895
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.026520166374924038,
+      "query_id": "49",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8677510615711541
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "491",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8070950095730863
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "5",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3025513347055188
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "50",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3528667039662911
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "501",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3528846460639033
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "502",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.019559165795328914,
+      "query_id": "507",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11070443591028975
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "508",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2718535214959186
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "51",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5345938727813462
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "513",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.042040966140641706
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.030512955308980922,
+      "query_id": "514",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2135932984680913
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.21360918413826863,
+      "query_id": "516",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5518184300084155
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "517",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.04340956417692024
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "521",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6072593612689969
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "525",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.20619014696486604
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0210200717331822,
+      "query_id": "527",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3985916109782793
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.033697166356317525,
+      "query_id": "528",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09981798608956272
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "53",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6162224783148095
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.012223960774552548,
+      "query_id": "532",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0813729321057856
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "533",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06375571888505532
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "535",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.03243315930955257
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "536",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6068834446096794
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "539",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6858116737723047
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0351015731860165,
+      "query_id": "54",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4456591189926293
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.6155963754551066,
+      "query_id": "540",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.3322363913272838
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.15657946856813443,
+      "query_id": "544",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.16147379021359273
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "549",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1226018167940218
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.27494841882727394,
+      "query_id": "551",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2576379580413929
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.10936006783103316,
+      "query_id": "552",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6460460157292339
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.01131559331097442,
+      "query_id": "554",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.08752840120506812
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "56",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6345706226557273
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "560",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "569",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06392150444572145
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "57",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6649650755040134
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "575",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4079644660254487
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.013849946325823953,
+      "query_id": "577",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.12635300551683637
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "578",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.242799128077572
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.011241717681471418,
+      "query_id": "587",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.27455682473488496
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "589",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9373168275594294
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.12454060207159809,
+      "query_id": "593",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6094744781605567
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.41563949079828744,
+      "query_id": "597",
+      "relevant_seeds": 3,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 3,
+      "seed_judged_relevance_mass": 0.4056816162486622
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.10983858413332091,
+      "query_id": "598",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06682813035246442
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "613",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.9155011542143537
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.07859737496189773,
+      "query_id": "619",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.19401226988302783
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.3596027209654111,
+      "query_id": "623",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.15563174712335326
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "628",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1939415121598334
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.04107759850326656,
+      "query_id": "636",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3738141225120831
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.3866041361844777,
+      "query_id": "637",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3709909914360669
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03800833111816282,
+      "query_id": "641",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6721062335460132
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "644",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2786292393991309
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "649",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3272206531766491
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "659",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1311439530242748
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "660",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.18438248879676036
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.031441188164586326,
+      "query_id": "674",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.12060899468906927
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0589623600036225,
+      "query_id": "684",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.13470007568315262
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "690",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3211025718692199
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "691",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.015362500319592185
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "692",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.3444157020263536
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "693",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6071549605635551
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.7205789759126173,
+      "query_id": "70",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.7205789759126173
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.2967968590546752,
+      "query_id": "700",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.26598876213640177
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.26430770869053166,
+      "query_id": "702",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.29953143449888203
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "715",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.14354247188697497
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "716",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09242007608671123
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "718",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.44178876053567145
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.018314424171787507,
+      "query_id": "72",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09996371176724288
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "721",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.21576972634036315
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "723",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8197724382756597
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.6999714610382615,
+      "query_id": "727",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1385393629623291
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.7173526016619192,
+      "query_id": "728",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 1,
+      "seed_judged_relevance_mass": 0.7998605573930476
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "729",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1418271381732837
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "742",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.10329417616380512
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "743",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.15106912986842122
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.6505796583436173,
+      "query_id": "744",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0893692222562895
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "75",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5349260012534504
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.3250497315172692,
+      "query_id": "756",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.16491801164706607
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.060868611688856,
+      "query_id": "759",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7505123105136577
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "768",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1073911411786711
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.06462181012533307,
+      "query_id": "770",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7355173039683457
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "775",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2623793579028817
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.3199439661691566,
+      "query_id": "781",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.40472970173738076
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.009264165380078489,
+      "query_id": "783",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02040289693272686
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "784",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.08437785352908979
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "785",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.019158755983832244
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.014409137829174874,
+      "query_id": "793",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.41219103565959564
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.009085236808574102,
+      "query_id": "800",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.137463899682153
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "805",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7427021226683627
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "808",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.43730435693701647
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "811",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.46580393817839955
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "814",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.77770624082168
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "820",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "821",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "823",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8040757136117955
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "830",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.019359441506901685
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "831",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.01616959384800736
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "832",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4378888211059264
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "834",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02417262384544705
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "837",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5699944815418041
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "839",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.14093003486976838
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "845",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.034700043580314144
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.07402609795650449,
+      "query_id": "847",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.40574891795473583
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0050288727955007965,
+      "query_id": "852",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.11680148063867761
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "859",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.26180254471605363
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.2109214533610954,
+      "query_id": "870",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.2233602485086012
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.25112165320504853,
+      "query_id": "873",
+      "relevant_seeds": 5,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 5,
+      "seed_judged_relevance_mass": 0.25112165320504853
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "879",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1268143142922853
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "880",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.08114705039439236
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.12546590307804978,
+      "query_id": "882",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6626030233101048
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "887",
+      "relevant_seeds": 0,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0739155649199523,
+      "query_id": "903",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5384887520209374
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "904",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8838912970071268
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03669869814749608,
+      "query_id": "907",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8145955155415717
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "911",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4842044678261268
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.05734584533829416,
+      "query_id": "913",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.015253184039581664
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.09094504082449047,
+      "query_id": "914",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.02925822922164904
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.023132820267683936,
+      "query_id": "921",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4199642540075137
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.006594758906576464,
+      "query_id": "922",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.8314852917780119
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "936",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.4957214650496279
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "94",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.09247482231284838
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "956",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.06663244654993353
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "957",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.050935927578875224
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "960",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.7033355245507291
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.6343588831110843,
+      "query_id": "967",
+      "relevant_seeds": 2,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 2,
+      "seed_judged_relevance_mass": 0.6343588831110843
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.844840347196914,
+      "query_id": "971",
+      "relevant_seeds": 4,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 4,
+      "seed_judged_relevance_mass": 0.6042414928897146
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "975",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.1610055731147015
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "982",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.0772363861458103
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.03675460744529676,
+      "query_id": "985",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.6882396164027247
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "99",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.19371334105751115
+    },
+    {
+      "neighbor_judged_relevance_mass": 0.0,
+      "query_id": "993",
+      "relevant_seeds": 1,
+      "relevant_seeds_whose_neighbor_is_judged_relevant": 0,
+      "seed_judged_relevance_mass": 0.5512460703486842
+    }
+  ],
+  "label_transfer_summary": {
+    "mean_neighbor_judged_relevance_mass": 0.06784974678548511,
+    "mean_seed_judged_relevance_mass": 0.3524899387426626,
+    "relevant_seed_edges": 331,
+    "relevant_seed_edges_to_judged_relevant": 45
+  },
+  "posthoc": true,
+  "trace_choice": "303: expansion finds an out-of-top50 positive; 834: the common Recall@10 loss; 1226: diffusion nDCG gain; 785: prior NEAR example.",
+  "traces": [
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.8272941708564758,
+          "diffusion_rank": 1,
+          "direct_mass": 0.04797675435617513,
+          "id": "11951999",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.048788009484569184,
+          "neighbor_mass": 0.12910226719558085,
+          "parents": [
+            {
+              "edge_cosine": 0.9227111339569092,
+              "id": "33677323",
+              "query_cosine": 0.7944332361221313,
+              "seed_rank": 2,
+              "title": "The oncogenic microRNA miR-22 targets the TET2 tumor suppressor to promote hematopoietic stem cell self-renewal and transformation."
+            },
+            {
+              "edge_cosine": 0.8892437219619751,
+              "id": "2405259",
+              "query_cosine": 0.7911128997802734,
+              "seed_rank": 3,
+              "title": "Tet2 is required to resolve inflammation by recruiting Hdac2 to specifically repress IL-6"
+            }
+          ],
+          "title": "The Ten-Eleven Translocation-2 (TET2) gene in hematopoiesis and hematopoietic diseases"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7944332361221313,
+          "diffusion_rank": 2,
+          "direct_mass": 0.012887775417081276,
+          "id": "33677323",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.015365391928249875,
+          "neighbor_mass": 0.26064942653394113,
+          "parents": [
+            {
+              "edge_cosine": 0.9227111339569092,
+              "id": "11951999",
+              "query_cosine": 0.8272941708564758,
+              "seed_rank": 1,
+              "title": "The Ten-Eleven Translocation-2 (TET2) gene in hematopoiesis and hematopoietic diseases"
+            }
+          ],
+          "title": "The oncogenic microRNA miR-22 targets the TET2 tumor suppressor to promote hematopoietic stem cell self-renewal and transformation."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7911128997802734,
+          "diffusion_rank": 3,
+          "direct_mass": 0.011284902453338136,
+          "id": "2405259",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.011172053428804753,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Tet2 is required to resolve inflammation by recruiting Hdac2 to specifically repress IL-6"
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.77390456199646,
+          "diffusion_rank": 5,
+          "direct_mass": 0.005669677597191117,
+          "id": "2086909",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.005928353581204791,
+          "neighbor_mass": 0.03153727599855852,
+          "parents": [
+            {
+              "edge_cosine": 0.9723626375198364,
+              "id": "13777138",
+              "query_cosine": 0.7731837034225464,
+              "seed_rank": 5,
+              "title": "Tet1 and Tet2 regulate 5-hydroxymethylcytosine production and cell lineage specification in mouse embryonic stem cells."
+            }
+          ],
+          "title": "Tet1 is dispensable for maintaining pluripotency and its loss is compatible with embryonic and postnatal development."
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7731837034225464,
+          "diffusion_rank": 4,
+          "direct_mass": 0.005508530617445708,
+          "id": "13777138",
+          "indegree": 5,
+          "judged_relevant": true,
+          "mixed_score": 0.00621934884231246,
+          "neighbor_mass": 0.07659035310412096,
+          "parents": [
+            {
+              "edge_cosine": 0.9723626375198364,
+              "id": "2086909",
+              "query_cosine": 0.77390456199646,
+              "seed_rank": 4,
+              "title": "Tet1 is dispensable for maintaining pluripotency and its loss is compatible with embryonic and postnatal development."
+            },
+            {
+              "edge_cosine": 0.9179800152778625,
+              "id": "24713020",
+              "query_cosine": 0.7600533366203308,
+              "seed_rank": 9,
+              "title": "Tet and TDG mediate DNA demethylation essential for mesenchymal-to-epithelial transition in somatic cell reprogramming."
+            },
+            {
+              "edge_cosine": 0.9058358073234558,
+              "id": "36950726",
+              "query_cosine": 0.7581706047058105,
+              "seed_rank": 13,
+              "title": "Loss of 5-hydroxymethylcytosine and ten-eleven translocation 2 protein expression in malignant melanoma."
+            },
+            {
+              "edge_cosine": 0.9463701844215393,
+              "id": "24731248",
+              "query_cosine": 0.7461419105529785,
+              "seed_rank": 33,
+              "title": "Tet proteins can convert 5-methylcytosine to 5-formylcytosine and 5-carboxylcytosine."
+            }
+          ],
+          "title": "Tet1 and Tet2 regulate 5-hydroxymethylcytosine production and cell lineage specification in mouse embryonic stem cells."
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7706873416900635,
+          "diffusion_rank": 6,
+          "direct_mass": 0.004985050046100669,
+          "id": "11369420",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.0050527749854902305,
+          "neighbor_mass": 0.011757543985056868,
+          "parents": [
+            {
+              "edge_cosine": 0.8913423418998718,
+              "id": "25832301",
+              "query_cosine": 0.750691831111908,
+              "seed_rank": 23,
+              "title": "Tetraspanin 7 (TSPAN7) expression is upregulated in multiple myeloma patients and inhibits myeloma tumour development in vivo."
+            }
+          ],
+          "title": "Tetraspanin 3 Is Required for the Development and Propagation of Acute Myelogenous Leukemia."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7678244709968567,
+          "diffusion_rank": 7,
+          "direct_mass": 0.00444566122517905,
+          "id": "8764879",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.004543242548693356,
+          "neighbor_mass": 0.014203793576609692,
+          "parents": [
+            {
+              "edge_cosine": 0.910091757774353,
+              "id": "19510470",
+              "query_cosine": 0.7548967599868774,
+              "seed_rank": 15,
+              "title": "Induction of cell cycle entry eliminates human leukemia stem cells in a mouse model of AML"
+            }
+          ],
+          "title": "PU.1-mediated upregulation of CSF1R is crucial for leukemia stem cell potential induced by MOZ-TIF2"
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7643872499465942,
+          "diffusion_rank": 8,
+          "direct_mass": 0.0038745896985839796,
+          "id": "9478135",
+          "indegree": 4,
+          "judged_relevant": false,
+          "mixed_score": 0.004106596915290808,
+          "neighbor_mass": 0.027075311369266816,
+          "parents": [
+            {
+              "edge_cosine": 0.8962175846099854,
+              "id": "28614776",
+              "query_cosine": 0.7585850954055786,
+              "seed_rank": 12,
+              "title": "Identification of functional cooperative mutations of SETD2 in human acute leukemia"
+            },
+            {
+              "edge_cosine": 0.9095882773399353,
+              "id": "13205096",
+              "query_cosine": 0.7482103109359741,
+              "seed_rank": 28,
+              "title": "Use of gene-expression profiling to identify prognostic subclasses in adult acute myeloid leukemia."
+            }
+          ],
+          "title": "Dual mutations in the AML1 and FLT3 genes are associated with leukemogenesis in acute myeloblastic leukemia of the M0 subtype"
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7600533366203308,
+          "diffusion_rank": 10,
+          "direct_mass": 0.003257901380960766,
+          "id": "24713020",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0032253223671511585,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Tet and TDG mediate DNA demethylation essential for mesenchymal-to-epithelial transition in somatic cell reprogramming."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.759945273399353,
+          "diffusion_rank": 9,
+          "direct_mass": 0.003243849400211826,
+          "id": "2359152",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.003341339941436181,
+          "neighbor_mass": 0.012992903522647344,
+          "parents": [
+            {
+              "edge_cosine": 0.9163674712181091,
+              "id": "8385277",
+              "query_cosine": 0.7524973154067993,
+              "seed_rank": 20,
+              "title": "Myelodysplasia and leukemia of Fanconi anemia are associated with a specific pattern of genomic abnormalities that includes cryptic RUNX1/AML1 lesions."
+            }
+          ],
+          "title": "Landscape of genetic lesions in 944 patients with myelodysplastic syndromes"
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7588343024253845,
+          "diffusion_rank": 11,
+          "direct_mass": 0.0031028525695717085,
+          "id": "5765455",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030718240438759913,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Reactive oxygen species, DNA damage, and error-prone repair: a model for genomic instability with progression in myeloid leukemia?"
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7585850954055786,
+          "diffusion_rank": 12,
+          "direct_mass": 0.003072076112927736,
+          "id": "28614776",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030413553517984588,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Identification of functional cooperative mutations of SETD2 in human acute leukemia"
+        }
+      ],
+      "query": "The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",
+      "query_id": "1226",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.7903292179107666,
+          "diffusion_rank": 2,
+          "direct_mass": 0.012515889285614831,
+          "id": "4085204",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.012390730392758682,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Transcripts of the MHM region on the chicken Z chromosome accumulate as non-coding RNA in the nucleus of female cells adjacent to the DMRT1 locus"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7901686429977417,
+          "diffusion_rank": 1,
+          "direct_mass": 0.012435757391201487,
+          "id": "28928964",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.012673772375767863,
+          "neighbor_mass": 0.036237255847839205,
+          "parents": [
+            {
+              "edge_cosine": 0.9172969460487366,
+              "id": "36708463",
+              "query_cosine": 0.7739763259887695,
+              "seed_rank": 5,
+              "title": "Sex differences in sex chromosome gene expression in mouse brain."
+            }
+          ],
+          "title": "Tissue-specific expression and regulation of sexually dimorphic genes in mice."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7819458842277527,
+          "diffusion_rank": 3,
+          "direct_mass": 0.008950108298626955,
+          "id": "28390999",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.009285907411328523,
+          "neighbor_mass": 0.04253001956878383,
+          "parents": [
+            {
+              "edge_cosine": 0.9038937091827393,
+              "id": "23581096",
+              "query_cosine": 0.778347373008728,
+              "seed_rank": 4,
+              "title": "Interactions between SRY and SOX genes in mammalian sex determination."
+            }
+          ],
+          "title": "Gene expression during gonadogenesis in the chicken embryo."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.778347373008728,
+          "diffusion_rank": 4,
+          "direct_mass": 0.007750250642870268,
+          "id": "23581096",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.007672748136441565,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Interactions between SRY and SOX genes in mammalian sex determination."
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7739763259887695,
+          "diffusion_rank": 5,
+          "direct_mass": 0.006507031120105324,
+          "id": "36708463",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.007261076938792053,
+          "neighbor_mass": 0.08191161298877817,
+          "parents": [
+            {
+              "edge_cosine": 0.9172969460487366,
+              "id": "28928964",
+              "query_cosine": 0.7901686429977417,
+              "seed_rank": 2,
+              "title": "Tissue-specific expression and regulation of sexually dimorphic genes in mice."
+            },
+            {
+              "edge_cosine": 0.9012422561645508,
+              "id": "41380943",
+              "query_cosine": 0.7481220960617065,
+              "seed_rank": 33,
+              "title": "Male Japanese quails with female brains do not show male sexual behaviors."
+            }
+          ],
+          "title": "Sex differences in sex chromosome gene expression in mouse brain."
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7715333104133606,
+          "diffusion_rank": 7,
+          "direct_mass": 0.005901241072387781,
+          "id": "5278233",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.005842228661663903,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "A maternally methylated CpG island in KvLQT1 is associated with an antisense paternal transcript and loss of imprinting in Beckwith-Wiedemann syndrome."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7706314921379089,
+          "diffusion_rank": 6,
+          "direct_mass": 0.0056921609082693884,
+          "id": "4392608",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.00605993459608911,
+          "neighbor_mass": 0.04246952969024154,
+          "parents": [
+            {
+              "edge_cosine": 0.8993645906448364,
+              "id": "2151983",
+              "query_cosine": 0.7691992521286011,
+              "seed_rank": 9,
+              "title": "Epigenetic switch involved in activation of pioneer factor FOXA1-dependent enhancers."
+            },
+            {
+              "edge_cosine": 0.9064079523086548,
+              "id": "2754534",
+              "query_cosine": 0.7488769292831421,
+              "seed_rank": 31,
+              "title": "DNA methylation status predicts cell type-specific enhancer activity."
+            }
+          ],
+          "title": "DNA-binding factors shape the mouse methylome at distal regulatory regions"
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7702682018280029,
+          "diffusion_rank": 8,
+          "direct_mass": 0.005610042732061242,
+          "id": "7988832",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0055539423047406295,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Methylomic trajectories across human fetal brain development."
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7691992521286011,
+          "diffusion_rank": 9,
+          "direct_mass": 0.005375224543374755,
+          "id": "2151983",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.005521621169221856,
+          "neighbor_mass": 0.020014887128084875,
+          "parents": [
+            {
+              "edge_cosine": 0.8872716426849365,
+              "id": "13639330",
+              "query_cosine": 0.7599680423736572,
+              "seed_rank": 15,
+              "title": "Histone Methylation-Dependent Mechanisms Impose Ligand Dependency for Gene Activation by Nuclear Receptors"
+            }
+          ],
+          "title": "Epigenetic switch involved in activation of pioneer factor FOXA1-dependent enhancers."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7689834833145142,
+          "diffusion_rank": 10,
+          "direct_mass": 0.005329031935591613,
+          "id": "3849194",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0052757416162356975,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Dnmt3a and Dnmt3b Associate with Enhancers to Regulate Human Epidermal Stem Cell Homeostasis."
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7652941942214966,
+          "diffusion_rank": 12,
+          "direct_mass": 0.004597892435772936,
+          "id": "5409325",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0045519135114152065,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Gonadotrope-specific deletion of Dicer results in severely suppressed gonadotropins and fertility defects."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7645106315612793,
+          "diffusion_rank": 11,
+          "direct_mass": 0.004456017928016302,
+          "id": "17775228",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.004847557347542503,
+          "neighbor_mass": 0.043609959880636394,
+          "parents": [
+            {
+              "edge_cosine": 0.8917461633682251,
+              "id": "5278233",
+              "query_cosine": 0.7715333104133606,
+              "seed_rank": 6,
+              "title": "A maternally methylated CpG island in KvLQT1 is associated with an antisense paternal transcript and loss of imprinting in Beckwith-Wiedemann syndrome."
+            },
+            {
+              "edge_cosine": 0.8629273176193237,
+              "id": "13450938",
+              "query_cosine": 0.7471594214439392,
+              "seed_rank": 40,
+              "title": "Genetic and epigenetic mutations affect the DNA binding capability of human ZFP57 in transient neonatal diabetes type 1"
+            }
+          ],
+          "title": "Loss of imprinting in colorectal cancer linked to hypomethylation of H19 and IGF2."
+        },
+        {
+          "baseline_rank": 53,
+          "cosine": 0.741836428642273,
+          "diffusion_rank": 34,
+          "direct_mass": 0.0017991015640287896,
+          "id": "4388470",
+          "indegree": 1,
+          "judged_relevant": true,
+          "mixed_score": 0.0022840667693060654,
+          "neighbor_mass": 0.05029562209175637,
+          "parents": [
+            {
+              "edge_cosine": 0.9256342649459839,
+              "id": "28390999",
+              "query_cosine": 0.7819458842277527,
+              "seed_rank": 3,
+              "title": "Gene expression during gonadogenesis in the chicken embryo."
+            }
+          ],
+          "title": "Somatic sex identity is cell-autonomous in the chicken"
+        }
+      ],
+      "query": "DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.",
+      "query_id": "303",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.7805532217025757,
+          "diffusion_rank": 1,
+          "direct_mass": 0.026937186658771126,
+          "id": "54440",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.026667814792183414,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Empirical Bayesian models for analysing molecular serotyping microarrays"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.76644366979599,
+          "diffusion_rank": 2,
+          "direct_mass": 0.015319486712970945,
+          "id": "31543713",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.015166291845841236,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Data analysis methods for detection of differential protein expression in two-dimensional gel electrophoresis."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7526770830154419,
+          "diffusion_rank": 3,
+          "direct_mass": 0.008832712758964013,
+          "id": "24979644",
+          "indegree": 6,
+          "judged_relevant": false,
+          "mixed_score": 0.010503367581795665,
+          "neighbor_mass": 0.1758981950421292,
+          "parents": [
+            {
+              "edge_cosine": 0.8757251501083374,
+              "id": "31543713",
+              "query_cosine": 0.76644366979599,
+              "seed_rank": 2,
+              "title": "Data analysis methods for detection of differential protein expression in two-dimensional gel electrophoresis."
+            },
+            {
+              "edge_cosine": 0.8682129383087158,
+              "id": "1542437",
+              "query_cosine": 0.7413365244865417,
+              "seed_rank": 5,
+              "title": "Robustness of Random Forest-based gene selection methods"
+            },
+            {
+              "edge_cosine": 0.8813881874084473,
+              "id": "17676273",
+              "query_cosine": 0.7321431636810303,
+              "seed_rank": 9,
+              "title": "affy--analysis of Affymetrix GeneChip data at the probe level."
+            },
+            {
+              "edge_cosine": 0.9631031155586243,
+              "id": "7396492",
+              "query_cosine": 0.7317042350769043,
+              "seed_rank": 10,
+              "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)"
+            }
+          ],
+          "title": "Frozen robust multiarray analysis (fRMA)."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.7498378157615662,
+          "diffusion_rank": 4,
+          "direct_mass": 0.00788444237346796,
+          "id": "54561709",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.00780559794973328,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Genetic variability in a frozen batch of MCF-7 cells invisible in routine authentication affecting cell function"
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7413365244865417,
+          "diffusion_rank": 6,
+          "direct_mass": 0.005611622239575165,
+          "id": "1542437",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.005555506017179414,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Robustness of Random Forest-based gene selection methods"
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7387022972106934,
+          "diffusion_rank": 7,
+          "direct_mass": 0.005050416706209188,
+          "id": "24234341",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0049999125391470955,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "lumi: a pipeline for processing Illumina microarray."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7359701991081238,
+          "diffusion_rank": 5,
+          "direct_mass": 0.004527576610864202,
+          "id": "39285547",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.006312688026128348,
+          "neighbor_mass": 0.1830387181372788,
+          "parents": [
+            {
+              "edge_cosine": 0.8817472457885742,
+              "id": "54440",
+              "query_cosine": 0.7805532217025757,
+              "seed_rank": 1,
+              "title": "Empirical Bayesian models for analysing molecular serotyping microarrays"
+            },
+            {
+              "edge_cosine": 0.922198474407196,
+              "id": "11721286",
+              "query_cosine": 0.7247660160064697,
+              "seed_rank": 14,
+              "title": "Streptococcus pneumoniae early response genes to human lung epithelial cells"
+            }
+          ],
+          "title": "Microarray analysis of pneumococcal gene expression during invasive disease."
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7326292395591736,
+          "diffusion_rank": 9,
+          "direct_mass": 0.003961205705075783,
+          "id": "21932050",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.004077253730200293,
+          "neighbor_mass": 0.015566008217526746,
+          "parents": [
+            {
+              "edge_cosine": 0.9541037082672119,
+              "id": "34016987",
+              "query_cosine": 0.7196269631385803,
+              "seed_rank": 19,
+              "title": "Transcriptome analysis reveals human cytomegalovirus reprograms monocyte differentiation toward an M1 macrophage."
+            }
+          ],
+          "title": "Microarrays for the study of viral gene expression during human cytomegalovirus latent infection."
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7321431636810303,
+          "diffusion_rank": 10,
+          "direct_mass": 0.0038849317448710202,
+          "id": "17676273",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.00384608242742231,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "affy--analysis of Affymetrix GeneChip data at the probe level."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7317042350769043,
+          "diffusion_rank": 8,
+          "direct_mass": 0.0038173187207799736,
+          "id": "7396492",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.004674237333854335,
+          "neighbor_mass": 0.08950918002821616,
+          "parents": [
+            {
+              "edge_cosine": 0.9631028175354004,
+              "id": "24979644",
+              "query_cosine": 0.7526770830154419,
+              "seed_rank": 3,
+              "title": "Frozen robust multiarray analysis (fRMA)."
+            },
+            {
+              "edge_cosine": 0.8736978769302368,
+              "id": "24234341",
+              "query_cosine": 0.7387022972106934,
+              "seed_rank": 6,
+              "title": "lumi: a pipeline for processing Illumina microarray."
+            }
+          ],
+          "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)"
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7265503406524658,
+          "diffusion_rank": 12,
+          "direct_mass": 0.0031061763292345584,
+          "id": "46602807",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030751145659422127,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Comparison of agar dilution, microdilution, and disk elution methods for measuring the synergy of cefotaxime and its metabolite against anaerobes."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7263127565383911,
+          "diffusion_rank": 13,
+          "direct_mass": 0.0030767970254113896,
+          "id": "12471115",
+          "indegree": 1,
+          "judged_relevant": true,
+          "mixed_score": 0.003046029055157276,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies"
+        },
+        {
+          "baseline_rank": 14,
+          "cosine": 0.7247660160064697,
+          "diffusion_rank": 11,
+          "direct_mass": 0.002892205927849162,
+          "id": "11721286",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.0031525630360480033,
+          "neighbor_mass": 0.028927916747733252,
+          "parents": [
+            {
+              "edge_cosine": 0.922198474407196,
+              "id": "39285547",
+              "query_cosine": 0.7359701991081238,
+              "seed_rank": 7,
+              "title": "Microarray analysis of pneumococcal gene expression during invasive disease."
+            }
+          ],
+          "title": "Streptococcus pneumoniae early response genes to human lung epithelial cells"
+        }
+      ],
+      "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+      "query_id": "785",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.8219417333602905,
+          "diffusion_rank": 1,
+          "direct_mass": 0.1137648116177591,
+          "id": "23100962",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.11262716350158151,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Nitric oxide synthase generates superoxide and nitric oxide in arginine-depleted cells leading to peroxynitrite-mediated cellular injury."
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7841125130653381,
+          "diffusion_rank": 2,
+          "direct_mass": 0.025052270185202744,
+          "id": "22995164",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.024801747483350716,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "H2S and HS\u2212 donor NaHS releases nitric oxide from nitrosothiols, metal nitrosyl complex, brain homogenate and murine L1210 leukaemia cells"
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7789353728294373,
+          "diffusion_rank": 3,
+          "direct_mass": 0.020366244320043223,
+          "id": "23122306",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.02016258187684279,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Lung Carcinogenesis by Diesel Exhaust Particles and the Carcinogenic Mechanism Via Active Oxygens."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.7786978483200073,
+          "diffusion_rank": 4,
+          "direct_mass": 0.02017366134461777,
+          "id": "13823200",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.019971924731171594,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Nitrite protects against morbidity and mortality associated with TNF- or LPS-induced shock in a soluble guanylate cyclase\u2013dependent manner"
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7707812786102295,
+          "diffusion_rank": 5,
+          "direct_mass": 0.014698053519474272,
+          "id": "32985041",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.015451783297042688,
+          "neighbor_mass": 0.09007103127631581,
+          "parents": [
+            {
+              "edge_cosine": 0.9108155965805054,
+              "id": "13823200",
+              "query_cosine": 0.7786978483200073,
+              "seed_rank": 4,
+              "title": "Nitrite protects against morbidity and mortality associated with TNF- or LPS-induced shock in a soluble guanylate cyclase\u2013dependent manner"
+            },
+            {
+              "edge_cosine": 0.9001625776290894,
+              "id": "20381484",
+              "query_cosine": 0.7663227319717407,
+              "seed_rank": 8,
+              "title": "GAPDH Mediates Nitrosylation of Nuclear Proteins"
+            },
+            {
+              "edge_cosine": 0.9255539178848267,
+              "id": "2139357",
+              "query_cosine": 0.7431619167327881,
+              "seed_rank": 21,
+              "title": "Involvement of S-nitrosylation of actin in inhibition of neurotransmitter release by nitric oxide"
+            }
+          ],
+          "title": "Protein S-nitrosylation: a physiological signal for neuronal nitric oxide"
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.769320547580719,
+          "diffusion_rank": 6,
+          "direct_mass": 0.013863865211829023,
+          "id": "8536018",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.013776768329714511,
+          "neighbor_mass": 0.0051541770003777675,
+          "parents": [
+            {
+              "edge_cosine": 0.8933404684066772,
+              "id": "24923605",
+              "query_cosine": 0.7230110764503479,
+              "seed_rank": 43,
+              "title": "Molecular elements of low-oxygen signaling in plants."
+            }
+          ],
+          "title": "Detection and function of nitric oxide during the hypersensitive response in Arabidopsis thaliana: where there's a will there's a way."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7669911980628967,
+          "diffusion_rank": 7,
+          "direct_mass": 0.012630466221314356,
+          "id": "26658659",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.012837012004805139,
+          "neighbor_mass": 0.03328504457039277,
+          "parents": [
+            {
+              "edge_cosine": 0.9532730579376221,
+              "id": "43048059",
+              "query_cosine": 0.7599389553070068,
+              "seed_rank": 11,
+              "title": "Hydrogen sulfide interacts with nitric oxide in the heart: possible involvement of nitroxyl."
+            },
+            {
+              "edge_cosine": 0.9230876564979553,
+              "id": "21932297",
+              "query_cosine": 0.7366597056388855,
+              "seed_rank": 29,
+              "title": "Physiological implications of hydrogen sulfide: a whiff exploration that blossomed."
+            }
+          ],
+          "title": "Hydrogen sulfide increases nitric oxide production with calcium-dependent activation of endothelial nitric oxide synthase in endothelial cells."
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7663227319717407,
+          "diffusion_rank": 8,
+          "direct_mass": 0.012297219818785567,
+          "id": "20381484",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.012174247620597711,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "GAPDH Mediates Nitrosylation of Nuclear Proteins"
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.761202871799469,
+          "diffusion_rank": 11,
+          "direct_mass": 0.010019956947047128,
+          "id": "5483793",
+          "indegree": 0,
+          "judged_relevant": true,
+          "mixed_score": 0.009919757377576657,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Altered recognition of antigen is a mechanism of CD8+ T cell tolerance in cancer"
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7604246139526367,
+          "diffusion_rank": 10,
+          "direct_mass": 0.00971283770345998,
+          "id": "6923795",
+          "indegree": 5,
+          "judged_relevant": false,
+          "mixed_score": 0.010050598039246338,
+          "neighbor_mass": 0.04348887128209577,
+          "parents": [
+            {
+              "edge_cosine": 0.9061179757118225,
+              "id": "15561961",
+              "query_cosine": 0.7587644457817078,
+              "seed_rank": 12,
+              "title": "expression by oxidized linoleic"
+            },
+            {
+              "edge_cosine": 0.8810157179832458,
+              "id": "35828148",
+              "query_cosine": 0.7512434720993042,
+              "seed_rank": 14,
+              "title": "Kinetic evidence for rapid oxidation of (-)-epicatechin by human myeloperoxidase."
+            },
+            {
+              "edge_cosine": 0.8977807760238647,
+              "id": "23513718",
+              "query_cosine": 0.726332426071167,
+              "seed_rank": 40,
+              "title": "Role of soluble guanylate cyclase in dilator responses of the cerebral microcirculation."
+            }
+          ],
+          "title": "Up-regulation of endothelial nitric-oxide synthase by endothelium-derived hyperpolarizing factor involves mitogen-activated protein kinase and protein kinase C signaling pathways."
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7599389553070068,
+          "diffusion_rank": 9,
+          "direct_mass": 0.009525973678445215,
+          "id": "43048059",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.010358289094675776,
+          "neighbor_mass": 0.09275751530150127,
+          "parents": [
+            {
+              "edge_cosine": 0.9150100946426392,
+              "id": "22995164",
+              "query_cosine": 0.7841125130653381,
+              "seed_rank": 2,
+              "title": "H2S and HS\u2212 donor NaHS releases nitric oxide from nitrosothiols, metal nitrosyl complex, brain homogenate and murine L1210 leukaemia cells"
+            },
+            {
+              "edge_cosine": 0.9532730579376221,
+              "id": "26658659",
+              "query_cosine": 0.7669911980628967,
+              "seed_rank": 7,
+              "title": "Hydrogen sulfide increases nitric oxide production with calcium-dependent activation of endothelial nitric oxide synthase in endothelial cells."
+            }
+          ],
+          "title": "Hydrogen sulfide interacts with nitric oxide in the heart: possible involvement of nitroxyl."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7587644457817078,
+          "diffusion_rank": 13,
+          "direct_mass": 0.00908878974749035,
+          "id": "15561961",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.008997901850015448,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "expression by oxidized linoleic"
+        },
+        {
+          "baseline_rank": 15,
+          "cosine": 0.7506663203239441,
+          "diffusion_rank": 12,
+          "direct_mass": 0.006573962296131408,
+          "id": "11181416",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.00924856369853784,
+          "neighbor_mass": 0.2740341025367747,
+          "parents": [
+            {
+              "edge_cosine": 0.9079475402832031,
+              "id": "23100962",
+              "query_cosine": 0.8219417333602905,
+              "seed_rank": 1,
+              "title": "Nitric oxide synthase generates superoxide and nitric oxide in arginine-depleted cells leading to peroxynitrite-mediated cellular injury."
+            }
+          ],
+          "title": "Arginase I: a limiting factor for nitric oxide and polyamine synthesis by activated macrophages?"
+        }
+      ],
+      "query": "NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.",
+      "query_id": "834",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    }
+  ],
+  "used_for_selection": false
+}

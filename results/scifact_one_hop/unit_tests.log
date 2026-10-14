@@ -1,0 +1,30 @@
+test_covariance_scale_matches_all_pairs_including_self (test_near.NearTests) ... ok
+test_degenerate_bank_is_finite (test_near.NearTests) ... ok
+test_equation4_matches_explicit_score_all_variants (test_near.NearTests) ... ok
+test_hand_computed_graded_ndcg_and_uncapped_recall (test_near.NearTests) ... ok
+test_invalid_input_fails (test_near.NearTests) ... ok
+test_nearest_neighbor_direction_by_hand (test_near.NearTests) ... ok
+test_paired_bootstrap_identical_is_zero (test_near.NearTests) ... ok
+test_query_routes_top_r_anchors_and_softmaxes_by_hand (test_near.NearTests) ... ok
+test_residual_is_orthogonal_to_local_reference (test_near.NearTests) ... ok
+test_self_exclusion_and_k_cap_even_for_duplicate_vectors (test_near.NearTests) ... ok
+test_tables_are_query_independent_and_round_trip (test_near.NearTests) ... ok
+test_zero_alpha_recovers_cosine_ranking (test_near.NearTests) ... ok
+test_diffusion_pair_flip_condition (test_one_hop.OneHopTests) ... ok
+test_exact_cosine_expansion_cannot_improve_topn (test_one_hop.OneHopTests) ... ok
+test_exact_graph_self_exclusion_and_ties (test_one_hop.OneHopTests) ... ok
+test_feedback_control_and_hand_calculated_neighbor (test_one_hop.OneHopTests) ... ok
+test_graph_matches_brute_force (test_one_hop.OneHopTests) ... ok
+test_hub_correction_uniform_votes (test_one_hop.OneHopTests) ... ok
+test_invalid_inputs (test_one_hop.OneHopTests) ... ok
+test_no_positive_edges_falls_back_to_direct (test_one_hop.OneHopTests) ... ok
+test_one_hop_does_not_recurse (test_one_hop.OneHopTests) ... ok
+test_probability_conservation_and_zero_weight (test_one_hop.OneHopTests) ... ok
+test_recall_first_selection_and_holm (test_one_hop.OneHopTests) ... ok
+test_round_trip_and_query_batch_consistency (test_one_hop.OneHopTests) ... ok
+test_weighted_vote_accumulation_by_hand (test_one_hop.OneHopTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.035s
+
+OK

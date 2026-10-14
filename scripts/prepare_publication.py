@@ -23,7 +23,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     names = ['README.md', '.gitignore', '.gitattributes', 'LICENSE', 'NOTICE.md', 'requirements.txt', 'requirements-optional.txt']
     files = [root / name for name in names]
-    for folder in ['near_retrieval', 'tests', 'scripts', 'configs', 'docs', '.github', 'results/scifact_eg2']:
+    for folder in ['near_retrieval', 'neighbor_retrieval', 'tests', 'scripts', 'configs', 'docs', '.github', 'results/scifact_eg2', 'results/scifact_one_hop']:
         files += [p for p in (root / folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and 'index' not in p.parts and p.suffix not in {'.pyc', '.faiss'}]
     # Cache-recovery and the historical local runner are environment-specific.
     files = [p for p in files if p.name not in {'recover_cached_wheels.py', 'run_local.sh'}]

@@ -4,6 +4,8 @@
 
 An independent implementation of [NEAR: Neighborhood-Aware Residuals for Memory Retrieval](https://arxiv.org/html/2610.13314v1), with a reproducible frozen-encoder comparison on **SciFact** from BEIR.
 
+**New experiment:** [One neighbor, one hop](https://ravisankarg.github.io/NEAR/one-hop.html) tests four frozen-EG2 graph/feedback variants on the same split. All four development-selected positive-weight variants score Recall@10 **91.60**, versus **91.93** for cosine and **92.20** for the prior NEAR run. Baseline remains the development-selected deployment choice. [Full mathematical report, conditions, examples, and limitations](results/scifact_one_hop/REPORT.md).
+
 The requested model is **EmbeddingGemma2**, not EmbeddingGemma-300M. The local experiment uses its INT4 QAT text backbone through the 440M text/vision LiteRT package. Only text inputs are evaluated; the text backbone has 270M parameters and emits 768-dimensional vectors. [Checkpoint details](https://huggingface.co/litert-community/embeddinggemma-2-text-vision-440m-litert-lm).
 
 The completed run is in [results/scifact_eg2/REPORT.md](results/scifact_eg2/REPORT.md), with a chart, raw metrics, paired confidence intervals, per-query changes, and TREC run files.
@@ -138,3 +140,30 @@ python3 -m http.server 8000 --directory docs
 The site is served from `docs/` by `.github/workflows/pages.yml`. It uses local assets, no analytics, no external fonts, and no model calls in the browser. Original benchmark core files retain the code hashes recorded in the experiment. Public provenance copies replace two machine-specific absolute paths with descriptive values and omit the full third-party abstract from the query trace; `publication_manifest.json` records original and published file hashes. Numerical values, document IDs/titles, model hashes, and code hashes are unchanged.
 
 The authors of the NEAR paper, the encoder, and SciFact are credited in the report and blog. This is an independent implementation and analysis. Third-party research and dataset text remain under their respective terms.
+
+## One-hop graph follow-up
+
+`neighbor_retrieval/one_hop.py` builds exactly one self-excluding nearest-neighbor edge per corpus document. It implements a normalized mixture of direct query scores and one-hop votes, a version corrected by destination indegree, ordinary query feedback as a control, and feedback augmented with one neighbor per seed. No encoder parameters are trained.
+
+The experiment searches 120 positive-weight configurations on the original 807 development queries, with Recall@10 primary and nDCG@10 as tie-breaker. Its separate selection and evaluation phases enforce a frozen code/configuration/data lock. The original cosine baseline is an eligible choice. Development baseline Recall@10 is already 100%, and none of the candidates improves its tie-break metric. All four positive diagnostic methods lose one test query and recover none at Recall@10. This is an exploratory follow-up on an already inspected test set, not independent confirmation.
+
+With the original matching cache and baseline/NEAR index present:
+
+```bash
+OPENBLAS_NUM_THREADS=4 python -m unittest discover -s tests -v
+python -m neighbor_retrieval.benchmark --phase select \
+  --out results/rerun_one_hop --graph artifacts/rerun_one_hop/graph.npz
+python -m neighbor_retrieval.benchmark --phase evaluate \
+  --out results/rerun_one_hop --graph artifacts/rerun_one_hop/graph.npz
+```
+
+For a fresh clone, first run the main reproduction commands above. `scripts/run_benchmark.sh` creates a matching baseline/NEAR run and native index under `results/rerun_scifact_eg2` and cached vectors under `artifacts/scifact_eg2_rerun`. Add `--prior results/rerun_scifact_eg2 --embeddings artifacts/scifact_eg2_rerun` to **both** one-hop phases (or use your overridden paths). The comparator must come from the same embedding manifest. The archived original native index is not bundled.
+
+To inspect the saved results without a model or NumPy:
+
+```bash
+python3 scripts/verify_one_hop_results.py
+node tests/test_one_hop_blog.mjs
+```
+
+The report distinguishes variable-size candidate coverage from fixed-cutoff recall. It gives an exact pairwise reversal condition, a zero-incoming-vote failure condition, and explicit assumptions under which neighbor averaging could reduce noise. It also includes the matching candidate-count cosine control and successful and unsuccessful document traces. Related work is cited; these simple one-hop variants are not claimed as a new graph-retrieval field or a reproduction of other graph methods.

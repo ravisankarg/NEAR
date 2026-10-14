@@ -1,0 +1,1821 @@
+{
+  "methods": {
+    "baseline": {
+      "metrics": {
+        "capped_recall@10": 0.9193333333333333,
+        "hit@10": 0.9233333333333333,
+        "mrr@10": 0.8172949735449736,
+        "ndcg@10": 0.8386123560626453,
+        "ndcg@100": 0.8543455453967064,
+        "ndcg@5": 0.8288285863231872,
+        "recall@10": 0.9193333333333333,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      }
+    },
+    "degree_diffusion": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.2592592592592593,
+          "improved": 0,
+          "unchanged": 297,
+          "worsened": 3
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.6262574015061109,
+            0.007262699516539535
+          ],
+          "delta_pp": -0.261306989049997,
+          "improved": 4,
+          "unchanged": 292,
+          "worsened": 4
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.4739462799862044,
+            0.0159356249617128
+          ],
+          "delta_pp": -0.17016934415368307,
+          "improved": 6,
+          "unchanged": 281,
+          "worsened": 13
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.47052524007956026,
+            0.008956803267764898
+          ],
+          "delta_pp": -0.17187835466894785,
+          "improved": 1,
+          "unchanged": 296,
+          "worsened": 3
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9816191656340355,
+        "ndcg@10": 0.9860334993030867,
+        "ndcg@100": 0.9860334993030867,
+        "ndcg@5": 0.9856888743228865,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8147023809523809,
+        "ndcg@10": 0.8359992861721454,
+        "ndcg@100": 0.8526438519551695,
+        "ndcg@5": 0.8271098027764977,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      },
+      "settings": {
+        "family": "degree_diffusion",
+        "seeds": 100,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    "diffusion": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.22222222222222227,
+            0.03928571428571428
+          ],
+          "delta_pp": -0.069973544973545,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.36996451002055347,
+            0.05551292541507054
+          ],
+          "delta_pp": -0.1113463379505742,
+          "improved": 6,
+          "unchanged": 291,
+          "worsened": 3
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.1301368608311662,
+            0.06907801284355454
+          ],
+          "delta_pp": -0.01668538463496294,
+          "improved": 8,
+          "unchanged": 280,
+          "worsened": 12
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.14509824484150363,
+            0.04382375083885143
+          ],
+          "delta_pp": -0.03424702224648322,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9822387443205287,
+        "ndcg@10": 0.9864908354200986,
+        "ndcg@100": 0.9864908354200986,
+        "ndcg@5": 0.9861462104398985,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8165952380952382,
+        "ndcg@10": 0.8374988926831395,
+        "ndcg@100": 0.8541786915503564,
+        "ndcg@5": 0.8284861161007224,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      },
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    "graph_feedback": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.8431216931216932,
+            -0.04365079365079366
+          ],
+          "delta_pp": -0.38941798941798944,
+          "improved": 2,
+          "unchanged": 290,
+          "worsened": 8
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.7598326115979533,
+            -0.0465701203739222
+          ],
+          "delta_pp": -0.36381521075137163,
+          "improved": 4,
+          "unchanged": 288,
+          "worsened": 8
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.6141951211777023,
+            -0.012325739773756613
+          ],
+          "delta_pp": -0.27382910307999386,
+          "improved": 10,
+          "unchanged": 275,
+          "worsened": 15
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -1.0275628765749396,
+            -0.07832969911320678
+          ],
+          "delta_pp": -0.4969707170009014,
+          "improved": 2,
+          "unchanged": 291,
+          "worsened": 7
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9807930607187113,
+        "ndcg@10": 0.9854665915878577,
+        "ndcg@100": 0.9854665915878577,
+        "ndcg@5": 0.9851219666076575,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8134007936507937,
+        "ndcg@10": 0.8349742039551316,
+        "ndcg@100": 0.8516072543659063,
+        "ndcg@5": 0.8238588791531781,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8861111111111112
+      },
+      "settings": {
+        "family": "graph_feedback",
+        "neighbor_fraction": 0.5,
+        "seeds": 30,
+        "temperature": 0.05,
+        "weight": 0.05
+      }
+    },
+    "near": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -0.8,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.2666666666666667,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -0.6666666666666667,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.33333333333333337,
+          "improved": 2,
+          "unchanged": 297,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.328045634920635,
+            1.9410317460317437
+          ],
+          "delta_pp": 0.7857142857142856,
+          "improved": 16,
+          "unchanged": 267,
+          "worsened": 17
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.33408896922792847,
+            1.4167725151156212
+          ],
+          "delta_pp": 0.5266717709847356,
+          "improved": 16,
+          "unchanged": 264,
+          "worsened": 20
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.4032184750896609,
+            1.2233628840173592
+          ],
+          "delta_pp": 0.39616427939109783,
+          "improved": 24,
+          "unchanged": 246,
+          "worsened": 30
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.9117886130011761,
+            1.1151927770131433
+          ],
+          "delta_pp": 0.09076227527755418,
+          "improved": 14,
+          "unchanged": 271,
+          "worsened": 15
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.1333333333333333,
+            1.8004166666668127
+          ],
+          "ci95_pp": [
+            -0.8,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.2666666666666667,
+          "improved": 2,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "recall@100": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -2.666666666666667,
+            0.33333333333333337
+          ],
+          "delta_pp": -1.1666666666666667,
+          "improved": 1,
+          "unchanged": 294,
+          "worsened": 5
+        }
+      },
+      "metrics": {
+        "capped_recall@10": 0.922,
+        "hit@10": 0.9266666666666666,
+        "mrr@10": 0.8251521164021165,
+        "ndcg@10": 0.8438790737724926,
+        "ndcg@100": 0.858307188190617,
+        "ndcg@5": 0.8297362090759628,
+        "recall@10": 0.922,
+        "recall@100": 0.9833333333333333,
+        "recall@5": 0.8811111111111113
+      }
+    },
+    "rocchio": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -1.0005291005291006,
+            -0.024999999999999967
+          ],
+          "delta_pp": -0.444973544973545,
+          "improved": 2,
+          "unchanged": 291,
+          "worsened": 7
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.8640888318736482,
+            -0.03422926019294557
+          ],
+          "delta_pp": -0.39955212384658073,
+          "improved": 4,
+          "unchanged": 289,
+          "worsened": 7
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.719557152868848,
+            0.005504998028572165
+          ],
+          "delta_pp": -0.30772629397807666,
+          "improved": 10,
+          "unchanged": 276,
+          "worsened": 14
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -1.1064379170512575,
+            -0.07304395534937971
+          ],
+          "delta_pp": -0.5327076300961107,
+          "improved": 2,
+          "unchanged": 292,
+          "worsened": 6
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9809995869475423,
+        "ndcg@10": 0.9856288341573389,
+        "ndcg@100": 0.9856288341573389,
+        "ndcg@5": 0.9852842091771389,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8128452380952381,
+        "ndcg@10": 0.8346168348241796,
+        "ndcg@100": 0.8512682824569254,
+        "ndcg@5": 0.8235015100222262,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8861111111111112
+      },
+      "settings": {
+        "family": "rocchio",
+        "neighbor_fraction": 0,
+        "seeds": 30,
+        "temperature": 0.05,
+        "weight": 0.05
+      }
+    }
+  },
+  "order": [
+    "baseline",
+    "near",
+    "diffusion",
+    "degree_diffusion",
+    "rocchio",
+    "graph_feedback"
+  ],
+  "labels": {
+    "baseline": "Cosine baseline",
+    "near": "NEAR (previous)",
+    "diffusion": "One-hop diffusion",
+    "degree_diffusion": "Degree-corrected diffusion",
+    "rocchio": "Query feedback control",
+    "graph_feedback": "One-hop query feedback"
+  },
+  "candidate_audit": {
+    "10": {
+      "cosine_2n_recall": 0.95,
+      "equal_count_cosine_recall": 0.9466666666666667,
+      "new_relevant_documents": 0.01,
+      "queries_with_new_relevant": 3,
+      "seed_recall": 0.9193333333333333,
+      "union_oracle_recall@10": 0.9293333333333333,
+      "union_recall": 0.9293333333333333,
+      "union_size": 15.32
+    },
+    "100": {
+      "cosine_2n_recall": 0.99,
+      "equal_count_cosine_recall": 0.99,
+      "new_relevant_documents": 0.0,
+      "queries_with_new_relevant": 0,
+      "seed_recall": 0.99,
+      "union_oracle_recall@10": 0.99,
+      "union_recall": 0.99,
+      "union_size": 146.28666666666666
+    },
+    "50": {
+      "cosine_2n_recall": 0.99,
+      "equal_count_cosine_recall": 0.98,
+      "new_relevant_documents": 0.0033333333333333335,
+      "queries_with_new_relevant": 1,
+      "seed_recall": 0.9733333333333334,
+      "union_oracle_recall@10": 0.9766666666666667,
+      "union_recall": 0.9766666666666667,
+      "union_size": 74.55666666666667
+    }
+  },
+  "graph": {
+    "build_seconds": 0.11413716798415408,
+    "destinations_with_votes": 3069,
+    "documents": 5183,
+    "graph_array_bytes": 103660,
+    "hops": 1,
+    "max_indegree": 8,
+    "mutual_edge_fraction": 0.4321821338992861,
+    "outdegree": 1,
+    "self_edges": 0,
+    "similarity_quantiles": [
+      0.702954113483429,
+      0.8706889152526855,
+      0.9088643789291382,
+      0.94489985704422,
+      0.9886260032653809
+    ]
+  },
+  "latency": {
+    "baseline": {
+      "includes_encoder": false,
+      "median_ms": 0.30481399153359234,
+      "p95_ms": 0.32103897246997803,
+      "queries": 100
+    },
+    "degree_diffusion": {
+      "includes_encoder": false,
+      "median_ms": 0.6120589969214052,
+      "p95_ms": 0.6412501068552956,
+      "queries": 100
+    },
+    "diffusion": {
+      "includes_encoder": false,
+      "median_ms": 0.6106530199758708,
+      "p95_ms": 0.6475722882896662,
+      "queries": 100
+    },
+    "graph_feedback": {
+      "includes_encoder": false,
+      "median_ms": 0.6945755449123681,
+      "p95_ms": 0.7393770880298689,
+      "queries": 100
+    },
+    "near": {
+      "includes_encoder": false,
+      "median_ms": 0.6447919877246022,
+      "p95_ms": 0.7586378924315795,
+      "queries": 100
+    },
+    "rocchio": {
+      "includes_encoder": false,
+      "median_ms": 0.7022915233392268,
+      "p95_ms": 0.7360003772191703,
+      "queries": 100
+    }
+  },
+  "selection": {
+    "dev_metrics": {
+      "capped_recall@10": 1.0,
+      "hit@10": 1.0,
+      "mrr@10": 0.9824452705493597,
+      "ndcg@10": 0.9867057489608441,
+      "ndcg@100": 0.9867057489608441,
+      "ndcg@5": 0.9863611239806439,
+      "recall@10": 1.0,
+      "recall@100": 1.0,
+      "recall@5": 0.9993804213135068
+    },
+    "settings": {
+      "family": "baseline"
+    }
+  },
+  "examples": [
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.8272941708564758,
+          "diffusion_rank": 1,
+          "direct_mass": 0.04797675435617513,
+          "id": "11951999",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.048788009484569184,
+          "neighbor_mass": 0.12910226719558085,
+          "parents": [
+            {
+              "edge_cosine": 0.9227111339569092,
+              "id": "33677323",
+              "query_cosine": 0.7944332361221313,
+              "seed_rank": 2,
+              "title": "The oncogenic microRNA miR-22 targets the TET2 tumor suppressor to promote hematopoietic stem cell self-renewal and transformation."
+            },
+            {
+              "edge_cosine": 0.8892437219619751,
+              "id": "2405259",
+              "query_cosine": 0.7911128997802734,
+              "seed_rank": 3,
+              "title": "Tet2 is required to resolve inflammation by recruiting Hdac2 to specifically repress IL-6"
+            }
+          ],
+          "title": "The Ten-Eleven Translocation-2 (TET2) gene in hematopoiesis and hematopoietic diseases"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7944332361221313,
+          "diffusion_rank": 2,
+          "direct_mass": 0.012887775417081276,
+          "id": "33677323",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.015365391928249875,
+          "neighbor_mass": 0.26064942653394113,
+          "parents": [
+            {
+              "edge_cosine": 0.9227111339569092,
+              "id": "11951999",
+              "query_cosine": 0.8272941708564758,
+              "seed_rank": 1,
+              "title": "The Ten-Eleven Translocation-2 (TET2) gene in hematopoiesis and hematopoietic diseases"
+            }
+          ],
+          "title": "The oncogenic microRNA miR-22 targets the TET2 tumor suppressor to promote hematopoietic stem cell self-renewal and transformation."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7911128997802734,
+          "diffusion_rank": 3,
+          "direct_mass": 0.011284902453338136,
+          "id": "2405259",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.011172053428804753,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Tet2 is required to resolve inflammation by recruiting Hdac2 to specifically repress IL-6"
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.77390456199646,
+          "diffusion_rank": 5,
+          "direct_mass": 0.005669677597191117,
+          "id": "2086909",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.005928353581204791,
+          "neighbor_mass": 0.03153727599855852,
+          "parents": [
+            {
+              "edge_cosine": 0.9723626375198364,
+              "id": "13777138",
+              "query_cosine": 0.7731837034225464,
+              "seed_rank": 5,
+              "title": "Tet1 and Tet2 regulate 5-hydroxymethylcytosine production and cell lineage specification in mouse embryonic stem cells."
+            }
+          ],
+          "title": "Tet1 is dispensable for maintaining pluripotency and its loss is compatible with embryonic and postnatal development."
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7731837034225464,
+          "diffusion_rank": 4,
+          "direct_mass": 0.005508530617445708,
+          "id": "13777138",
+          "indegree": 5,
+          "judged_relevant": true,
+          "mixed_score": 0.00621934884231246,
+          "neighbor_mass": 0.07659035310412096,
+          "parents": [
+            {
+              "edge_cosine": 0.9723626375198364,
+              "id": "2086909",
+              "query_cosine": 0.77390456199646,
+              "seed_rank": 4,
+              "title": "Tet1 is dispensable for maintaining pluripotency and its loss is compatible with embryonic and postnatal development."
+            },
+            {
+              "edge_cosine": 0.9179800152778625,
+              "id": "24713020",
+              "query_cosine": 0.7600533366203308,
+              "seed_rank": 9,
+              "title": "Tet and TDG mediate DNA demethylation essential for mesenchymal-to-epithelial transition in somatic cell reprogramming."
+            },
+            {
+              "edge_cosine": 0.9058358073234558,
+              "id": "36950726",
+              "query_cosine": 0.7581706047058105,
+              "seed_rank": 13,
+              "title": "Loss of 5-hydroxymethylcytosine and ten-eleven translocation 2 protein expression in malignant melanoma."
+            },
+            {
+              "edge_cosine": 0.9463701844215393,
+              "id": "24731248",
+              "query_cosine": 0.7461419105529785,
+              "seed_rank": 33,
+              "title": "Tet proteins can convert 5-methylcytosine to 5-formylcytosine and 5-carboxylcytosine."
+            }
+          ],
+          "title": "Tet1 and Tet2 regulate 5-hydroxymethylcytosine production and cell lineage specification in mouse embryonic stem cells."
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7706873416900635,
+          "diffusion_rank": 6,
+          "direct_mass": 0.004985050046100669,
+          "id": "11369420",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.0050527749854902305,
+          "neighbor_mass": 0.011757543985056868,
+          "parents": [
+            {
+              "edge_cosine": 0.8913423418998718,
+              "id": "25832301",
+              "query_cosine": 0.750691831111908,
+              "seed_rank": 23,
+              "title": "Tetraspanin 7 (TSPAN7) expression is upregulated in multiple myeloma patients and inhibits myeloma tumour development in vivo."
+            }
+          ],
+          "title": "Tetraspanin 3 Is Required for the Development and Propagation of Acute Myelogenous Leukemia."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7678244709968567,
+          "diffusion_rank": 7,
+          "direct_mass": 0.00444566122517905,
+          "id": "8764879",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.004543242548693356,
+          "neighbor_mass": 0.014203793576609692,
+          "parents": [
+            {
+              "edge_cosine": 0.910091757774353,
+              "id": "19510470",
+              "query_cosine": 0.7548967599868774,
+              "seed_rank": 15,
+              "title": "Induction of cell cycle entry eliminates human leukemia stem cells in a mouse model of AML"
+            }
+          ],
+          "title": "PU.1-mediated upregulation of CSF1R is crucial for leukemia stem cell potential induced by MOZ-TIF2"
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7643872499465942,
+          "diffusion_rank": 8,
+          "direct_mass": 0.0038745896985839796,
+          "id": "9478135",
+          "indegree": 4,
+          "judged_relevant": false,
+          "mixed_score": 0.004106596915290808,
+          "neighbor_mass": 0.027075311369266816,
+          "parents": [
+            {
+              "edge_cosine": 0.8962175846099854,
+              "id": "28614776",
+              "query_cosine": 0.7585850954055786,
+              "seed_rank": 12,
+              "title": "Identification of functional cooperative mutations of SETD2 in human acute leukemia"
+            },
+            {
+              "edge_cosine": 0.9095882773399353,
+              "id": "13205096",
+              "query_cosine": 0.7482103109359741,
+              "seed_rank": 28,
+              "title": "Use of gene-expression profiling to identify prognostic subclasses in adult acute myeloid leukemia."
+            }
+          ],
+          "title": "Dual mutations in the AML1 and FLT3 genes are associated with leukemogenesis in acute myeloblastic leukemia of the M0 subtype"
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7600533366203308,
+          "diffusion_rank": 10,
+          "direct_mass": 0.003257901380960766,
+          "id": "24713020",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0032253223671511585,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Tet and TDG mediate DNA demethylation essential for mesenchymal-to-epithelial transition in somatic cell reprogramming."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.759945273399353,
+          "diffusion_rank": 9,
+          "direct_mass": 0.003243849400211826,
+          "id": "2359152",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.003341339941436181,
+          "neighbor_mass": 0.012992903522647344,
+          "parents": [
+            {
+              "edge_cosine": 0.9163674712181091,
+              "id": "8385277",
+              "query_cosine": 0.7524973154067993,
+              "seed_rank": 20,
+              "title": "Myelodysplasia and leukemia of Fanconi anemia are associated with a specific pattern of genomic abnormalities that includes cryptic RUNX1/AML1 lesions."
+            }
+          ],
+          "title": "Landscape of genetic lesions in 944 patients with myelodysplastic syndromes"
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7588343024253845,
+          "diffusion_rank": 11,
+          "direct_mass": 0.0031028525695717085,
+          "id": "5765455",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030718240438759913,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Reactive oxygen species, DNA damage, and error-prone repair: a model for genomic instability with progression in myeloid leukemia?"
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7585850954055786,
+          "diffusion_rank": 12,
+          "direct_mass": 0.003072076112927736,
+          "id": "28614776",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030413553517984588,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Identification of functional cooperative mutations of SETD2 in human acute leukemia"
+        }
+      ],
+      "query": "The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",
+      "query_id": "1226",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.7903292179107666,
+          "diffusion_rank": 2,
+          "direct_mass": 0.012515889285614831,
+          "id": "4085204",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.012390730392758682,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Transcripts of the MHM region on the chicken Z chromosome accumulate as non-coding RNA in the nucleus of female cells adjacent to the DMRT1 locus"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7901686429977417,
+          "diffusion_rank": 1,
+          "direct_mass": 0.012435757391201487,
+          "id": "28928964",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.012673772375767863,
+          "neighbor_mass": 0.036237255847839205,
+          "parents": [
+            {
+              "edge_cosine": 0.9172969460487366,
+              "id": "36708463",
+              "query_cosine": 0.7739763259887695,
+              "seed_rank": 5,
+              "title": "Sex differences in sex chromosome gene expression in mouse brain."
+            }
+          ],
+          "title": "Tissue-specific expression and regulation of sexually dimorphic genes in mice."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7819458842277527,
+          "diffusion_rank": 3,
+          "direct_mass": 0.008950108298626955,
+          "id": "28390999",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.009285907411328523,
+          "neighbor_mass": 0.04253001956878383,
+          "parents": [
+            {
+              "edge_cosine": 0.9038937091827393,
+              "id": "23581096",
+              "query_cosine": 0.778347373008728,
+              "seed_rank": 4,
+              "title": "Interactions between SRY and SOX genes in mammalian sex determination."
+            }
+          ],
+          "title": "Gene expression during gonadogenesis in the chicken embryo."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.778347373008728,
+          "diffusion_rank": 4,
+          "direct_mass": 0.007750250642870268,
+          "id": "23581096",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.007672748136441565,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Interactions between SRY and SOX genes in mammalian sex determination."
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7739763259887695,
+          "diffusion_rank": 5,
+          "direct_mass": 0.006507031120105324,
+          "id": "36708463",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.007261076938792053,
+          "neighbor_mass": 0.08191161298877817,
+          "parents": [
+            {
+              "edge_cosine": 0.9172969460487366,
+              "id": "28928964",
+              "query_cosine": 0.7901686429977417,
+              "seed_rank": 2,
+              "title": "Tissue-specific expression and regulation of sexually dimorphic genes in mice."
+            },
+            {
+              "edge_cosine": 0.9012422561645508,
+              "id": "41380943",
+              "query_cosine": 0.7481220960617065,
+              "seed_rank": 33,
+              "title": "Male Japanese quails with female brains do not show male sexual behaviors."
+            }
+          ],
+          "title": "Sex differences in sex chromosome gene expression in mouse brain."
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7715333104133606,
+          "diffusion_rank": 7,
+          "direct_mass": 0.005901241072387781,
+          "id": "5278233",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.005842228661663903,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "A maternally methylated CpG island in KvLQT1 is associated with an antisense paternal transcript and loss of imprinting in Beckwith-Wiedemann syndrome."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7706314921379089,
+          "diffusion_rank": 6,
+          "direct_mass": 0.0056921609082693884,
+          "id": "4392608",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.00605993459608911,
+          "neighbor_mass": 0.04246952969024154,
+          "parents": [
+            {
+              "edge_cosine": 0.8993645906448364,
+              "id": "2151983",
+              "query_cosine": 0.7691992521286011,
+              "seed_rank": 9,
+              "title": "Epigenetic switch involved in activation of pioneer factor FOXA1-dependent enhancers."
+            },
+            {
+              "edge_cosine": 0.9064079523086548,
+              "id": "2754534",
+              "query_cosine": 0.7488769292831421,
+              "seed_rank": 31,
+              "title": "DNA methylation status predicts cell type-specific enhancer activity."
+            }
+          ],
+          "title": "DNA-binding factors shape the mouse methylome at distal regulatory regions"
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7702682018280029,
+          "diffusion_rank": 8,
+          "direct_mass": 0.005610042732061242,
+          "id": "7988832",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0055539423047406295,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Methylomic trajectories across human fetal brain development."
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7691992521286011,
+          "diffusion_rank": 9,
+          "direct_mass": 0.005375224543374755,
+          "id": "2151983",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.005521621169221856,
+          "neighbor_mass": 0.020014887128084875,
+          "parents": [
+            {
+              "edge_cosine": 0.8872716426849365,
+              "id": "13639330",
+              "query_cosine": 0.7599680423736572,
+              "seed_rank": 15,
+              "title": "Histone Methylation-Dependent Mechanisms Impose Ligand Dependency for Gene Activation by Nuclear Receptors"
+            }
+          ],
+          "title": "Epigenetic switch involved in activation of pioneer factor FOXA1-dependent enhancers."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7689834833145142,
+          "diffusion_rank": 10,
+          "direct_mass": 0.005329031935591613,
+          "id": "3849194",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0052757416162356975,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Dnmt3a and Dnmt3b Associate with Enhancers to Regulate Human Epidermal Stem Cell Homeostasis."
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7652941942214966,
+          "diffusion_rank": 12,
+          "direct_mass": 0.004597892435772936,
+          "id": "5409325",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0045519135114152065,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Gonadotrope-specific deletion of Dicer results in severely suppressed gonadotropins and fertility defects."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7645106315612793,
+          "diffusion_rank": 11,
+          "direct_mass": 0.004456017928016302,
+          "id": "17775228",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.004847557347542503,
+          "neighbor_mass": 0.043609959880636394,
+          "parents": [
+            {
+              "edge_cosine": 0.8917461633682251,
+              "id": "5278233",
+              "query_cosine": 0.7715333104133606,
+              "seed_rank": 6,
+              "title": "A maternally methylated CpG island in KvLQT1 is associated with an antisense paternal transcript and loss of imprinting in Beckwith-Wiedemann syndrome."
+            },
+            {
+              "edge_cosine": 0.8629273176193237,
+              "id": "13450938",
+              "query_cosine": 0.7471594214439392,
+              "seed_rank": 40,
+              "title": "Genetic and epigenetic mutations affect the DNA binding capability of human ZFP57 in transient neonatal diabetes type 1"
+            }
+          ],
+          "title": "Loss of imprinting in colorectal cancer linked to hypomethylation of H19 and IGF2."
+        },
+        {
+          "baseline_rank": 53,
+          "cosine": 0.741836428642273,
+          "diffusion_rank": 34,
+          "direct_mass": 0.0017991015640287896,
+          "id": "4388470",
+          "indegree": 1,
+          "judged_relevant": true,
+          "mixed_score": 0.0022840667693060654,
+          "neighbor_mass": 0.05029562209175637,
+          "parents": [
+            {
+              "edge_cosine": 0.9256342649459839,
+              "id": "28390999",
+              "query_cosine": 0.7819458842277527,
+              "seed_rank": 3,
+              "title": "Gene expression during gonadogenesis in the chicken embryo."
+            }
+          ],
+          "title": "Somatic sex identity is cell-autonomous in the chicken"
+        }
+      ],
+      "query": "DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.",
+      "query_id": "303",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.7805532217025757,
+          "diffusion_rank": 1,
+          "direct_mass": 0.026937186658771126,
+          "id": "54440",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.026667814792183414,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Empirical Bayesian models for analysing molecular serotyping microarrays"
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.76644366979599,
+          "diffusion_rank": 2,
+          "direct_mass": 0.015319486712970945,
+          "id": "31543713",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.015166291845841236,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Data analysis methods for detection of differential protein expression in two-dimensional gel electrophoresis."
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7526770830154419,
+          "diffusion_rank": 3,
+          "direct_mass": 0.008832712758964013,
+          "id": "24979644",
+          "indegree": 6,
+          "judged_relevant": false,
+          "mixed_score": 0.010503367581795665,
+          "neighbor_mass": 0.1758981950421292,
+          "parents": [
+            {
+              "edge_cosine": 0.8757251501083374,
+              "id": "31543713",
+              "query_cosine": 0.76644366979599,
+              "seed_rank": 2,
+              "title": "Data analysis methods for detection of differential protein expression in two-dimensional gel electrophoresis."
+            },
+            {
+              "edge_cosine": 0.8682129383087158,
+              "id": "1542437",
+              "query_cosine": 0.7413365244865417,
+              "seed_rank": 5,
+              "title": "Robustness of Random Forest-based gene selection methods"
+            },
+            {
+              "edge_cosine": 0.8813881874084473,
+              "id": "17676273",
+              "query_cosine": 0.7321431636810303,
+              "seed_rank": 9,
+              "title": "affy--analysis of Affymetrix GeneChip data at the probe level."
+            },
+            {
+              "edge_cosine": 0.9631031155586243,
+              "id": "7396492",
+              "query_cosine": 0.7317042350769043,
+              "seed_rank": 10,
+              "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)"
+            }
+          ],
+          "title": "Frozen robust multiarray analysis (fRMA)."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.7498378157615662,
+          "diffusion_rank": 4,
+          "direct_mass": 0.00788444237346796,
+          "id": "54561709",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.00780559794973328,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Genetic variability in a frozen batch of MCF-7 cells invisible in routine authentication affecting cell function"
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7413365244865417,
+          "diffusion_rank": 6,
+          "direct_mass": 0.005611622239575165,
+          "id": "1542437",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.005555506017179414,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Robustness of Random Forest-based gene selection methods"
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.7387022972106934,
+          "diffusion_rank": 7,
+          "direct_mass": 0.005050416706209188,
+          "id": "24234341",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.0049999125391470955,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "lumi: a pipeline for processing Illumina microarray."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7359701991081238,
+          "diffusion_rank": 5,
+          "direct_mass": 0.004527576610864202,
+          "id": "39285547",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.006312688026128348,
+          "neighbor_mass": 0.1830387181372788,
+          "parents": [
+            {
+              "edge_cosine": 0.8817472457885742,
+              "id": "54440",
+              "query_cosine": 0.7805532217025757,
+              "seed_rank": 1,
+              "title": "Empirical Bayesian models for analysing molecular serotyping microarrays"
+            },
+            {
+              "edge_cosine": 0.922198474407196,
+              "id": "11721286",
+              "query_cosine": 0.7247660160064697,
+              "seed_rank": 14,
+              "title": "Streptococcus pneumoniae early response genes to human lung epithelial cells"
+            }
+          ],
+          "title": "Microarray analysis of pneumococcal gene expression during invasive disease."
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7326292395591736,
+          "diffusion_rank": 9,
+          "direct_mass": 0.003961205705075783,
+          "id": "21932050",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.004077253730200293,
+          "neighbor_mass": 0.015566008217526746,
+          "parents": [
+            {
+              "edge_cosine": 0.9541037082672119,
+              "id": "34016987",
+              "query_cosine": 0.7196269631385803,
+              "seed_rank": 19,
+              "title": "Transcriptome analysis reveals human cytomegalovirus reprograms monocyte differentiation toward an M1 macrophage."
+            }
+          ],
+          "title": "Microarrays for the study of viral gene expression during human cytomegalovirus latent infection."
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.7321431636810303,
+          "diffusion_rank": 10,
+          "direct_mass": 0.0038849317448710202,
+          "id": "17676273",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.00384608242742231,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "affy--analysis of Affymetrix GeneChip data at the probe level."
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7317042350769043,
+          "diffusion_rank": 8,
+          "direct_mass": 0.0038173187207799736,
+          "id": "7396492",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.004674237333854335,
+          "neighbor_mass": 0.08950918002821616,
+          "parents": [
+            {
+              "edge_cosine": 0.9631028175354004,
+              "id": "24979644",
+              "query_cosine": 0.7526770830154419,
+              "seed_rank": 3,
+              "title": "Frozen robust multiarray analysis (fRMA)."
+            },
+            {
+              "edge_cosine": 0.8736978769302368,
+              "id": "24234341",
+              "query_cosine": 0.7387022972106934,
+              "seed_rank": 6,
+              "title": "lumi: a pipeline for processing Illumina microarray."
+            }
+          ],
+          "title": "Thawing Frozen Robust Multi-array Analysis (fRMA)"
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7265503406524658,
+          "diffusion_rank": 12,
+          "direct_mass": 0.0031061763292345584,
+          "id": "46602807",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.0030751145659422127,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Comparison of agar dilution, microdilution, and disk elution methods for measuring the synergy of cefotaxime and its metabolite against anaerobes."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7263127565383911,
+          "diffusion_rank": 13,
+          "direct_mass": 0.0030767970254113896,
+          "id": "12471115",
+          "indegree": 1,
+          "judged_relevant": true,
+          "mixed_score": 0.003046029055157276,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "The PneuCarriage Project: A Multi-Centre Comparative Study to Identify the Best Serotyping Methods for Examining Pneumococcal Carriage in Vaccine Evaluation Studies"
+        },
+        {
+          "baseline_rank": 14,
+          "cosine": 0.7247660160064697,
+          "diffusion_rank": 11,
+          "direct_mass": 0.002892205927849162,
+          "id": "11721286",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.0031525630360480033,
+          "neighbor_mass": 0.028927916747733252,
+          "parents": [
+            {
+              "edge_cosine": 0.922198474407196,
+              "id": "39285547",
+              "query_cosine": 0.7359701991081238,
+              "seed_rank": 7,
+              "title": "Microarray analysis of pneumococcal gene expression during invasive disease."
+            }
+          ],
+          "title": "Streptococcus pneumoniae early response genes to human lung epithelial cells"
+        }
+      ],
+      "query": "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+      "query_id": "785",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    {
+      "documents": [
+        {
+          "baseline_rank": 1,
+          "cosine": 0.8219417333602905,
+          "diffusion_rank": 1,
+          "direct_mass": 0.1137648116177591,
+          "id": "23100962",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.11262716350158151,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Nitric oxide synthase generates superoxide and nitric oxide in arginine-depleted cells leading to peroxynitrite-mediated cellular injury."
+        },
+        {
+          "baseline_rank": 2,
+          "cosine": 0.7841125130653381,
+          "diffusion_rank": 2,
+          "direct_mass": 0.025052270185202744,
+          "id": "22995164",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.024801747483350716,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "H2S and HS\u2212 donor NaHS releases nitric oxide from nitrosothiols, metal nitrosyl complex, brain homogenate and murine L1210 leukaemia cells"
+        },
+        {
+          "baseline_rank": 3,
+          "cosine": 0.7789353728294373,
+          "diffusion_rank": 3,
+          "direct_mass": 0.020366244320043223,
+          "id": "23122306",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.02016258187684279,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Lung Carcinogenesis by Diesel Exhaust Particles and the Carcinogenic Mechanism Via Active Oxygens."
+        },
+        {
+          "baseline_rank": 4,
+          "cosine": 0.7786978483200073,
+          "diffusion_rank": 4,
+          "direct_mass": 0.02017366134461777,
+          "id": "13823200",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.019971924731171594,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Nitrite protects against morbidity and mortality associated with TNF- or LPS-induced shock in a soluble guanylate cyclase\u2013dependent manner"
+        },
+        {
+          "baseline_rank": 5,
+          "cosine": 0.7707812786102295,
+          "diffusion_rank": 5,
+          "direct_mass": 0.014698053519474272,
+          "id": "32985041",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.015451783297042688,
+          "neighbor_mass": 0.09007103127631581,
+          "parents": [
+            {
+              "edge_cosine": 0.9108155965805054,
+              "id": "13823200",
+              "query_cosine": 0.7786978483200073,
+              "seed_rank": 4,
+              "title": "Nitrite protects against morbidity and mortality associated with TNF- or LPS-induced shock in a soluble guanylate cyclase\u2013dependent manner"
+            },
+            {
+              "edge_cosine": 0.9001625776290894,
+              "id": "20381484",
+              "query_cosine": 0.7663227319717407,
+              "seed_rank": 8,
+              "title": "GAPDH Mediates Nitrosylation of Nuclear Proteins"
+            },
+            {
+              "edge_cosine": 0.9255539178848267,
+              "id": "2139357",
+              "query_cosine": 0.7431619167327881,
+              "seed_rank": 21,
+              "title": "Involvement of S-nitrosylation of actin in inhibition of neurotransmitter release by nitric oxide"
+            }
+          ],
+          "title": "Protein S-nitrosylation: a physiological signal for neuronal nitric oxide"
+        },
+        {
+          "baseline_rank": 6,
+          "cosine": 0.769320547580719,
+          "diffusion_rank": 6,
+          "direct_mass": 0.013863865211829023,
+          "id": "8536018",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.013776768329714511,
+          "neighbor_mass": 0.0051541770003777675,
+          "parents": [
+            {
+              "edge_cosine": 0.8933404684066772,
+              "id": "24923605",
+              "query_cosine": 0.7230110764503479,
+              "seed_rank": 43,
+              "title": "Molecular elements of low-oxygen signaling in plants."
+            }
+          ],
+          "title": "Detection and function of nitric oxide during the hypersensitive response in Arabidopsis thaliana: where there's a will there's a way."
+        },
+        {
+          "baseline_rank": 7,
+          "cosine": 0.7669911980628967,
+          "diffusion_rank": 7,
+          "direct_mass": 0.012630466221314356,
+          "id": "26658659",
+          "indegree": 3,
+          "judged_relevant": false,
+          "mixed_score": 0.012837012004805139,
+          "neighbor_mass": 0.03328504457039277,
+          "parents": [
+            {
+              "edge_cosine": 0.9532730579376221,
+              "id": "43048059",
+              "query_cosine": 0.7599389553070068,
+              "seed_rank": 11,
+              "title": "Hydrogen sulfide interacts with nitric oxide in the heart: possible involvement of nitroxyl."
+            },
+            {
+              "edge_cosine": 0.9230876564979553,
+              "id": "21932297",
+              "query_cosine": 0.7366597056388855,
+              "seed_rank": 29,
+              "title": "Physiological implications of hydrogen sulfide: a whiff exploration that blossomed."
+            }
+          ],
+          "title": "Hydrogen sulfide increases nitric oxide production with calcium-dependent activation of endothelial nitric oxide synthase in endothelial cells."
+        },
+        {
+          "baseline_rank": 8,
+          "cosine": 0.7663227319717407,
+          "diffusion_rank": 8,
+          "direct_mass": 0.012297219818785567,
+          "id": "20381484",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.012174247620597711,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "GAPDH Mediates Nitrosylation of Nuclear Proteins"
+        },
+        {
+          "baseline_rank": 9,
+          "cosine": 0.761202871799469,
+          "diffusion_rank": 11,
+          "direct_mass": 0.010019956947047128,
+          "id": "5483793",
+          "indegree": 0,
+          "judged_relevant": true,
+          "mixed_score": 0.009919757377576657,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "Altered recognition of antigen is a mechanism of CD8+ T cell tolerance in cancer"
+        },
+        {
+          "baseline_rank": 10,
+          "cosine": 0.7604246139526367,
+          "diffusion_rank": 10,
+          "direct_mass": 0.00971283770345998,
+          "id": "6923795",
+          "indegree": 5,
+          "judged_relevant": false,
+          "mixed_score": 0.010050598039246338,
+          "neighbor_mass": 0.04348887128209577,
+          "parents": [
+            {
+              "edge_cosine": 0.9061179757118225,
+              "id": "15561961",
+              "query_cosine": 0.7587644457817078,
+              "seed_rank": 12,
+              "title": "expression by oxidized linoleic"
+            },
+            {
+              "edge_cosine": 0.8810157179832458,
+              "id": "35828148",
+              "query_cosine": 0.7512434720993042,
+              "seed_rank": 14,
+              "title": "Kinetic evidence for rapid oxidation of (-)-epicatechin by human myeloperoxidase."
+            },
+            {
+              "edge_cosine": 0.8977807760238647,
+              "id": "23513718",
+              "query_cosine": 0.726332426071167,
+              "seed_rank": 40,
+              "title": "Role of soluble guanylate cyclase in dilator responses of the cerebral microcirculation."
+            }
+          ],
+          "title": "Up-regulation of endothelial nitric-oxide synthase by endothelium-derived hyperpolarizing factor involves mitogen-activated protein kinase and protein kinase C signaling pathways."
+        },
+        {
+          "baseline_rank": 11,
+          "cosine": 0.7599389553070068,
+          "diffusion_rank": 9,
+          "direct_mass": 0.009525973678445215,
+          "id": "43048059",
+          "indegree": 2,
+          "judged_relevant": false,
+          "mixed_score": 0.010358289094675776,
+          "neighbor_mass": 0.09275751530150127,
+          "parents": [
+            {
+              "edge_cosine": 0.9150100946426392,
+              "id": "22995164",
+              "query_cosine": 0.7841125130653381,
+              "seed_rank": 2,
+              "title": "H2S and HS\u2212 donor NaHS releases nitric oxide from nitrosothiols, metal nitrosyl complex, brain homogenate and murine L1210 leukaemia cells"
+            },
+            {
+              "edge_cosine": 0.9532730579376221,
+              "id": "26658659",
+              "query_cosine": 0.7669911980628967,
+              "seed_rank": 7,
+              "title": "Hydrogen sulfide increases nitric oxide production with calcium-dependent activation of endothelial nitric oxide synthase in endothelial cells."
+            }
+          ],
+          "title": "Hydrogen sulfide interacts with nitric oxide in the heart: possible involvement of nitroxyl."
+        },
+        {
+          "baseline_rank": 12,
+          "cosine": 0.7587644457817078,
+          "diffusion_rank": 13,
+          "direct_mass": 0.00908878974749035,
+          "id": "15561961",
+          "indegree": 0,
+          "judged_relevant": false,
+          "mixed_score": 0.008997901850015448,
+          "neighbor_mass": 0.0,
+          "parents": [],
+          "title": "expression by oxidized linoleic"
+        },
+        {
+          "baseline_rank": 15,
+          "cosine": 0.7506663203239441,
+          "diffusion_rank": 12,
+          "direct_mass": 0.006573962296131408,
+          "id": "11181416",
+          "indegree": 1,
+          "judged_relevant": false,
+          "mixed_score": 0.00924856369853784,
+          "neighbor_mass": 0.2740341025367747,
+          "parents": [
+            {
+              "edge_cosine": 0.9079475402832031,
+              "id": "23100962",
+              "query_cosine": 0.8219417333602905,
+              "seed_rank": 1,
+              "title": "Nitric oxide synthase generates superoxide and nitric oxide in arginine-depleted cells leading to peroxynitrite-mediated cellular injury."
+            }
+          ],
+          "title": "Arginase I: a limiting factor for nitric oxide and polyamine synthesis by activated macrophages?"
+        }
+      ],
+      "query": "NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.",
+      "query_id": "834",
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    }
+  ],
+  "label_transfer": {
+    "mean_neighbor_judged_relevance_mass": 0.06784974678548511,
+    "mean_seed_judged_relevance_mass": 0.3524899387426626,
+    "relevant_seed_edges": 331,
+    "relevant_seed_edges_to_judged_relevant": 45
+  }
+}

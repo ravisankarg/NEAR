@@ -1,0 +1,18 @@
+{
+  "build_seconds": 0.11413716798415408,
+  "destinations_with_votes": 3069,
+  "documents": 5183,
+  "graph_array_bytes": 103660,
+  "hops": 1,
+  "max_indegree": 8,
+  "mutual_edge_fraction": 0.4321821338992861,
+  "outdegree": 1,
+  "self_edges": 0,
+  "similarity_quantiles": [
+    0.702954113483429,
+    0.8706889152526855,
+    0.9088643789291382,
+    0.94489985704422,
+    0.9886260032653809
+  ]
+}

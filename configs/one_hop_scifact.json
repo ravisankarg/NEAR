@@ -1,0 +1,23 @@
+{
+  "experiment": "Frozen EG2: one nearest neighbor, one hop",
+  "version": 1,
+  "seed": 20261014,
+  "primary_metric": "recall@10",
+  "tie_break_metric": "ndcg@10",
+  "family_order": ["diffusion", "degree_diffusion", "rocchio", "graph_feedback"],
+  "diffusion_seed_counts": [10, 50, 100],
+  "diffusion_temperatures": [0.025, 0.05, 0.1],
+  "diffusion_weights": [0.01, 0.05, 0.1, 0.2, 0.4],
+  "feedback_seed_counts": [3, 10, 30],
+  "feedback_temperatures": [0.05],
+  "feedback_weights": [0.05, 0.1, 0.2, 0.4, 0.8],
+  "graph_feedback_neighbor_fraction": 0.5,
+  "candidate_audit_seed_counts": [10, 50, 100],
+  "bootstrap_samples": 20000,
+  "permutation_samples": 20000,
+  "test_use": "Exploratory follow-up on the same previously inspected 300 test queries; no new test results may select parameters or methods.",
+  "selection": "Best positive configuration per family by development Recall@10, then nDCG@10, then fixed grid order. Overall deployment choice includes the unchanged cosine baseline first; ties retain the earlier choice.",
+  "constraints": "Frozen encoder and identical cached vectors. Corpus graph uses exactly one self-excluding nearest neighbor per document; all query graph operations use one hop only. Graph feedback performs a second full-corpus search; diffusion ranks the union of direct candidates and their one-hop neighbors.",
+  "uncertainty": "Paired query bootstrap with fixed configurations; four positive families additionally receive Bonferroni 98.75% Recall@10 intervals and Holm-corrected two-sided sign-randomization p values. These do not correct historical test reuse or query dependence.",
+  "prior_near_comparator": "Use the previously locked NEAR model and reported runs; its original selection objective was nDCG@10, unlike the new recall-first experiment."
+}

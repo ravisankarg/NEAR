@@ -1,0 +1,833 @@
+{
+  "candidate_audit": {
+    "10": {
+      "cosine_2n_recall": 0.95,
+      "equal_count_cosine_recall": 0.9466666666666667,
+      "new_relevant_documents": 0.01,
+      "queries_with_new_relevant": 3,
+      "seed_recall": 0.9193333333333333,
+      "union_oracle_recall@10": 0.9293333333333333,
+      "union_recall": 0.9293333333333333,
+      "union_size": 15.32
+    },
+    "100": {
+      "cosine_2n_recall": 0.99,
+      "equal_count_cosine_recall": 0.99,
+      "new_relevant_documents": 0.0,
+      "queries_with_new_relevant": 0,
+      "seed_recall": 0.99,
+      "union_oracle_recall@10": 0.99,
+      "union_recall": 0.99,
+      "union_size": 146.28666666666666
+    },
+    "50": {
+      "cosine_2n_recall": 0.99,
+      "equal_count_cosine_recall": 0.98,
+      "new_relevant_documents": 0.0033333333333333335,
+      "queries_with_new_relevant": 1,
+      "seed_recall": 0.9733333333333334,
+      "union_oracle_recall@10": 0.9766666666666667,
+      "union_recall": 0.9766666666666667,
+      "union_size": 74.55666666666667
+    }
+  },
+  "config": {
+    "bootstrap_samples": 20000,
+    "candidate_audit_seed_counts": [
+      10,
+      50,
+      100
+    ],
+    "constraints": "Frozen encoder and identical cached vectors. Corpus graph uses exactly one self-excluding nearest neighbor per document; all query graph operations use one hop only. Graph feedback performs a second full-corpus search; diffusion ranks the union of direct candidates and their one-hop neighbors.",
+    "diffusion_seed_counts": [
+      10,
+      50,
+      100
+    ],
+    "diffusion_temperatures": [
+      0.025,
+      0.05,
+      0.1
+    ],
+    "diffusion_weights": [
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "experiment": "Frozen EG2: one nearest neighbor, one hop",
+    "family_order": [
+      "diffusion",
+      "degree_diffusion",
+      "rocchio",
+      "graph_feedback"
+    ],
+    "feedback_seed_counts": [
+      3,
+      10,
+      30
+    ],
+    "feedback_temperatures": [
+      0.05
+    ],
+    "feedback_weights": [
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8
+    ],
+    "graph_feedback_neighbor_fraction": 0.5,
+    "permutation_samples": 20000,
+    "primary_metric": "recall@10",
+    "prior_near_comparator": "Use the previously locked NEAR model and reported runs; its original selection objective was nDCG@10, unlike the new recall-first experiment.",
+    "seed": 20261014,
+    "selection": "Best positive configuration per family by development Recall@10, then nDCG@10, then fixed grid order. Overall deployment choice includes the unchanged cosine baseline first; ties retain the earlier choice.",
+    "test_use": "Exploratory follow-up on the same previously inspected 300 test queries; no new test results may select parameters or methods.",
+    "tie_break_metric": "ndcg@10",
+    "uncertainty": "Paired query bootstrap with fixed configurations; four positive families additionally receive Bonferroni 98.75% Recall@10 intervals and Holm-corrected two-sided sign-randomization p values. These do not correct historical test reuse or query dependence.",
+    "version": 1
+  },
+  "deployment_choice": {
+    "dev_metrics": {
+      "capped_recall@10": 1.0,
+      "hit@10": 1.0,
+      "mrr@10": 0.9824452705493597,
+      "ndcg@10": 0.9867057489608441,
+      "ndcg@100": 0.9867057489608441,
+      "ndcg@5": 0.9863611239806439,
+      "recall@10": 1.0,
+      "recall@100": 1.0,
+      "recall@5": 0.9993804213135068
+    },
+    "settings": {
+      "family": "baseline"
+    }
+  },
+  "dev_queries": 807,
+  "documents": 5183,
+  "encoder": {
+    "corpus_sha256": "84f18c5844b478aeec5c499764fd37f2af4eca18e5d1e63bd9588fb0694d5f43",
+    "family": "embeddinggemma2",
+    "model_sha256": "92dcbea108899e5d6e30d919b0744f90d9967e80c67a4ab5503ac16d54f62eb0",
+    "queries_sha256": "f0cfb173dca9c9579d0e5e25adb482aa5dd4b3f4607b235ce283dc96e0be5124"
+  },
+  "experiment": "Frozen EG2: one nearest neighbor, one hop",
+  "graph": {
+    "build_seconds": 0.11413716798415408,
+    "destinations_with_votes": 3069,
+    "documents": 5183,
+    "graph_array_bytes": 103660,
+    "hops": 1,
+    "max_indegree": 8,
+    "mutual_edge_fraction": 0.4321821338992861,
+    "outdegree": 1,
+    "self_edges": 0,
+    "similarity_quantiles": [
+      0.702954113483429,
+      0.8706889152526855,
+      0.9088643789291382,
+      0.94489985704422,
+      0.9886260032653809
+    ]
+  },
+  "latency": {
+    "baseline": {
+      "includes_encoder": false,
+      "median_ms": 0.30481399153359234,
+      "p95_ms": 0.32103897246997803,
+      "queries": 100
+    },
+    "degree_diffusion": {
+      "includes_encoder": false,
+      "median_ms": 0.6120589969214052,
+      "p95_ms": 0.6412501068552956,
+      "queries": 100
+    },
+    "diffusion": {
+      "includes_encoder": false,
+      "median_ms": 0.6106530199758708,
+      "p95_ms": 0.6475722882896662,
+      "queries": 100
+    },
+    "graph_feedback": {
+      "includes_encoder": false,
+      "median_ms": 0.6945755449123681,
+      "p95_ms": 0.7393770880298689,
+      "queries": 100
+    },
+    "near": {
+      "includes_encoder": false,
+      "median_ms": 0.6447919877246022,
+      "p95_ms": 0.7586378924315795,
+      "queries": 100
+    },
+    "rocchio": {
+      "includes_encoder": false,
+      "median_ms": 0.7022915233392268,
+      "p95_ms": 0.7360003772191703,
+      "queries": 100
+    }
+  },
+  "limitations": [
+    "Same previously inspected test set: exploratory follow-up, not independent confirmation.",
+    "One encoder, one dataset, quantized text-only inference and exact search.",
+    "Related queries may share evidence documents; query-level bootstrap/sign tests assume exchangeable queries.",
+    "Relevance is judged evidence, not all semantic relatedness; unjudged documents count as nonrelevant.",
+    "The new methods are tuned for Recall@10; historical NEAR was tuned for nDCG@10.",
+    "Multiple-family correction does not account for prior test reuse or related-query dependence.",
+    "Graph feedback is one-hop expansion followed by a second full-corpus search, unlike bounded diffusion."
+  ],
+  "methods": {
+    "baseline": {
+      "metrics": {
+        "capped_recall@10": 0.9193333333333333,
+        "hit@10": 0.9233333333333333,
+        "mrr@10": 0.8172949735449736,
+        "ndcg@10": 0.8386123560626453,
+        "ndcg@100": 0.8543455453967064,
+        "ndcg@5": 0.8288285863231872,
+        "recall@10": 0.9193333333333333,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      }
+    },
+    "degree_diffusion": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.2592592592592593,
+          "improved": 0,
+          "unchanged": 297,
+          "worsened": 3
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.6262574015061109,
+            0.007262699516539535
+          ],
+          "delta_pp": -0.261306989049997,
+          "improved": 4,
+          "unchanged": 292,
+          "worsened": 4
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.4739462799862044,
+            0.0159356249617128
+          ],
+          "delta_pp": -0.17016934415368307,
+          "improved": 6,
+          "unchanged": 281,
+          "worsened": 13
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.47052524007956026,
+            0.008956803267764898
+          ],
+          "delta_pp": -0.17187835466894785,
+          "improved": 1,
+          "unchanged": 296,
+          "worsened": 3
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9816191656340355,
+        "ndcg@10": 0.9860334993030867,
+        "ndcg@100": 0.9860334993030867,
+        "ndcg@5": 0.9856888743228865,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8147023809523809,
+        "ndcg@10": 0.8359992861721454,
+        "ndcg@100": 0.8526438519551695,
+        "ndcg@5": 0.8271098027764977,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      },
+      "settings": {
+        "family": "degree_diffusion",
+        "seeds": 100,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    "diffusion": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.22222222222222227,
+            0.03928571428571428
+          ],
+          "delta_pp": -0.069973544973545,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.36996451002055347,
+            0.05551292541507054
+          ],
+          "delta_pp": -0.1113463379505742,
+          "improved": 6,
+          "unchanged": 291,
+          "worsened": 3
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.1301368608311662,
+            0.06907801284355454
+          ],
+          "delta_pp": -0.01668538463496294,
+          "improved": 8,
+          "unchanged": 280,
+          "worsened": 12
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.14509824484150363,
+            0.04382375083885143
+          ],
+          "delta_pp": -0.03424702224648322,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9822387443205287,
+        "ndcg@10": 0.9864908354200986,
+        "ndcg@100": 0.9864908354200986,
+        "ndcg@5": 0.9861462104398985,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8165952380952382,
+        "ndcg@10": 0.8374988926831395,
+        "ndcg@100": 0.8541786915503564,
+        "ndcg@5": 0.8284861161007224,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8927777777777779
+      },
+      "settings": {
+        "family": "diffusion",
+        "seeds": 50,
+        "temperature": 0.025,
+        "weight": 0.01
+      }
+    },
+    "graph_feedback": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.8431216931216932,
+            -0.04365079365079366
+          ],
+          "delta_pp": -0.38941798941798944,
+          "improved": 2,
+          "unchanged": 290,
+          "worsened": 8
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.7598326115979533,
+            -0.0465701203739222
+          ],
+          "delta_pp": -0.36381521075137163,
+          "improved": 4,
+          "unchanged": 288,
+          "worsened": 8
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.6141951211777023,
+            -0.012325739773756613
+          ],
+          "delta_pp": -0.27382910307999386,
+          "improved": 10,
+          "unchanged": 275,
+          "worsened": 15
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -1.0275628765749396,
+            -0.07832969911320678
+          ],
+          "delta_pp": -0.4969707170009014,
+          "improved": 2,
+          "unchanged": 291,
+          "worsened": 7
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9807930607187113,
+        "ndcg@10": 0.9854665915878577,
+        "ndcg@100": 0.9854665915878577,
+        "ndcg@5": 0.9851219666076575,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8134007936507937,
+        "ndcg@10": 0.8349742039551316,
+        "ndcg@100": 0.8516072543659063,
+        "ndcg@5": 0.8238588791531781,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8861111111111112
+      },
+      "settings": {
+        "family": "graph_feedback",
+        "neighbor_fraction": 0.5,
+        "seeds": 30,
+        "temperature": 0.05,
+        "weight": 0.05
+      }
+    },
+    "near": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -0.8,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.2666666666666667,
+          "improved": 2,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -0.6666666666666667,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.33333333333333337,
+          "improved": 2,
+          "unchanged": 297,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -0.328045634920635,
+            1.9410317460317437
+          ],
+          "delta_pp": 0.7857142857142856,
+          "improved": 16,
+          "unchanged": 267,
+          "worsened": 17
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.33408896922792847,
+            1.4167725151156212
+          ],
+          "delta_pp": 0.5266717709847356,
+          "improved": 16,
+          "unchanged": 264,
+          "worsened": 20
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.4032184750896609,
+            1.2233628840173592
+          ],
+          "delta_pp": 0.39616427939109783,
+          "improved": 24,
+          "unchanged": 246,
+          "worsened": 30
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -0.9117886130011761,
+            1.1151927770131433
+          ],
+          "delta_pp": 0.09076227527755418,
+          "improved": 14,
+          "unchanged": 271,
+          "worsened": 15
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.1333333333333333,
+            1.8004166666668127
+          ],
+          "ci95_pp": [
+            -0.8,
+            1.3333333333333335
+          ],
+          "delta_pp": 0.2666666666666667,
+          "improved": 2,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 296,
+          "worsened": 2
+        },
+        "recall@100": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -2.666666666666667,
+            0.33333333333333337
+          ],
+          "delta_pp": -1.1666666666666667,
+          "improved": 1,
+          "unchanged": 294,
+          "worsened": 5
+        }
+      },
+      "metrics": {
+        "capped_recall@10": 0.922,
+        "hit@10": 0.9266666666666666,
+        "mrr@10": 0.8251521164021165,
+        "ndcg@10": 0.8438790737724926,
+        "ndcg@100": 0.858307188190617,
+        "ndcg@5": 0.8297362090759628,
+        "recall@10": 0.922,
+        "recall@100": 0.9833333333333333,
+        "recall@5": 0.8811111111111113
+      }
+    },
+    "rocchio": {
+      "comparison": {
+        "capped_recall@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "hit@10": {
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "improved": 0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "mrr@10": {
+          "ci95_pp": [
+            -1.0005291005291006,
+            -0.024999999999999967
+          ],
+          "delta_pp": -0.444973544973545,
+          "improved": 2,
+          "unchanged": 291,
+          "worsened": 7
+        },
+        "ndcg@10": {
+          "ci95_pp": [
+            -0.8640888318736482,
+            -0.03422926019294557
+          ],
+          "delta_pp": -0.39955212384658073,
+          "improved": 4,
+          "unchanged": 289,
+          "worsened": 7
+        },
+        "ndcg@100": {
+          "ci95_pp": [
+            -0.719557152868848,
+            0.005504998028572165
+          ],
+          "delta_pp": -0.30772629397807666,
+          "improved": 10,
+          "unchanged": 276,
+          "worsened": 14
+        },
+        "ndcg@5": {
+          "ci95_pp": [
+            -1.1064379170512575,
+            -0.07304395534937971
+          ],
+          "delta_pp": -0.5327076300961107,
+          "improved": 2,
+          "unchanged": 292,
+          "worsened": 6
+        },
+        "recall@10": {
+          "bonferroni_ci_pp": [
+            -1.3333333333333335,
+            0.0
+          ],
+          "ci95_pp": [
+            -1.0,
+            0.0
+          ],
+          "delta_pp": -0.33333333333333337,
+          "holm_p": 1.0,
+          "improved": 0,
+          "paired_sign_randomization_p": 1.0,
+          "unchanged": 299,
+          "worsened": 1
+        },
+        "recall@100": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "delta_pp": 0.0,
+          "improved": 0,
+          "unchanged": 300,
+          "worsened": 0
+        },
+        "recall@5": {
+          "ci95_pp": [
+            -1.6666666666666667,
+            0.0
+          ],
+          "delta_pp": -0.6666666666666667,
+          "improved": 0,
+          "unchanged": 298,
+          "worsened": 2
+        }
+      },
+      "dev_metrics": {
+        "capped_recall@10": 1.0,
+        "hit@10": 1.0,
+        "mrr@10": 0.9809995869475423,
+        "ndcg@10": 0.9856288341573389,
+        "ndcg@100": 0.9856288341573389,
+        "ndcg@5": 0.9852842091771389,
+        "recall@10": 1.0,
+        "recall@100": 1.0,
+        "recall@5": 0.9993804213135068
+      },
+      "metrics": {
+        "capped_recall@10": 0.916,
+        "hit@10": 0.92,
+        "mrr@10": 0.8128452380952381,
+        "ndcg@10": 0.8346168348241796,
+        "ndcg@100": 0.8512682824569254,
+        "ndcg@5": 0.8235015100222262,
+        "recall@10": 0.916,
+        "recall@100": 0.99,
+        "recall@5": 0.8861111111111112
+      },
+      "settings": {
+        "family": "rocchio",
+        "neighbor_fraction": 0,
+        "seeds": 30,
+        "temperature": 0.05,
+        "weight": 0.05
+      }
+    }
+  },
+  "numpy": "2.2.6",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "test_queries": 300,
+  "validation": {
+    "diffusion_top100_within_one_hop_union": true,
+    "expansion_only_topN_exact_match": true,
+    "frozen_selection_sha256": "078c5613d7a1b40e2320f41af3a23f2695a5e48e8aab371d90d76258162e46b6",
+    "graph_self_edges": 0,
+    "original_baseline_top100_exact_match": true,
+    "original_metrics_exact_match": true,
+    "pytrec_eval": "All 6 methods, all 300 queries match nDCG@10 and Recall@10/100"
+  }
+}

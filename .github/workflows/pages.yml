@@ -21,7 +21,9 @@ jobs:
       - name: Verify published evidence and blog arithmetic
         run: |
           python3 scripts/verify_published_results.py
+          python3 scripts/verify_one_hop_results.py
           node tests/test_blog.mjs
+          node tests/test_one_hop_blog.mjs
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
